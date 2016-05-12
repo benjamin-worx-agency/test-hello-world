@@ -1,0 +1,44 @@
+
+".container" : {
+  
+}
+
+".followingTableRow": {
+	height: "60", 
+	layout: "horizontal",
+	backgroundColor: "transparent",
+	width: "100%",
+}
+
+".followingNodeLabel": {
+	left: 5,
+	top: 0,
+	font: {
+		fontSize: "12pt",
+		fontFamily: "Substance-ExtraBold"
+	},
+	color: Alloy.Globals.TikklrGreen
+}
+
+".followingNodeUser": {
+	left: 5,
+	bottom: 7,
+	font: {
+		fontSize: "10pt",
+		fontFamily: "Substance-ExtraBold"
+	},
+	color: Alloy.Globals.TikklrBlack
+}
+
+".profileFollowingTableInnerBox": {
+	left: "5",
+    right: "5",
+    bottom: "5",
+	backgroundColor: Alloy.Globals.TikklrWhite
+}
+
+".profileFollowingLabelsBox": {
+	top: 2,
+	left: 60,
+	width: 170,
+}

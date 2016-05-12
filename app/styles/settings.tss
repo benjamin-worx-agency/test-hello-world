@@ -1,0 +1,8 @@
+".tikklrMenuSwitch": {
+	top: Alloy.Globals.PaddingTop,
+	right: "10",
+	width: 100,
+	height: 40,
+	onTint: Alloy.Globals.TikklrGreen,
+	zIndex: 1000
+}

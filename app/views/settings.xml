@@ -1,0 +1,151 @@
+<Alloy>
+	<Model id="User" src="User" instance="true"/>
+		
+	<View id="menuWin" class="menuContainer" backgroundImage="tikklrBackgroundLite.png">
+		<View class="settingsTableHeader"> 
+			<Button class="backButton" onClick="backClicked"/>
+			<Label class="settingsTableHeaderLabel" text="SETTINGS"/>
+			<Button id="saveButton" class="settingsTableSave" onClick="saveUser" title="SAVE"/>
+		</View>
+		<TableView class="settingsTable" backgroundColor="white" opacity="1">
+			
+			<!-- Account Details section  -->
+			<TableViewRow class="tikklrSectionRow">
+                	<Label class="extraBold greenFont" backgroundColor="transparent" text="ACCOUNT DETAILS"/>
+                </TableViewRow>
+            <TableViewRow class="tikklrSettingsRow" title="Username"> 
+            	<TextField id="name" class="tikklrSettingsTextField" onBlur="settingsBlur" value="{$.User.name}" bind="name" hintText="add text"/>
+            </TableViewRow>
+            <TableViewRow class="tikklrSettingsRow" title="Email">
+            	<Label id="mail" class="tikklrSettingsTextField" text="{$.User.mail}" bind="mail"/>
+            </TableViewRow>
+            <!-- <TableViewRow class="tikklrSettingsRow" title="Password">
+            	<TextField class="tikklrSettingsTextField" value="{password}" hintText="replace password"></TextField>
+            </TableViewRow> -->
+            <TableViewRow class="tikklrSettingsRow" title="First name">
+            	<Label id="firstName" class="tikklrSettingsTextField" text="{$.User.firstName}" bind="field_name_first"/>
+        	</TableViewRow>
+            <TableViewRow class="tikklrSettingsRow" title="Surname">
+            	<Label id="lastName" class="tikklrSettingsTextField" text="{$.User.lastName}" bind="field_name_last"/>
+            </TableViewRow>
+            <TableViewRow class="tikklrSettingsRow" title="Location">
+            	<Label id="location" class="tikklrSettingsTextField" text="{$.User.location}" bind="field_tikklr_location"/>
+            </TableViewRow>
+       	
+       		<!--Connected profile section  -->
+    		<!-- <TableViewRow class="tikklrSectionRow" visible="false">
+            	<Label class="extraBold greenFont" backgroundColor="transparent" text="CONNECTED PROFILES"/>
+            </TableViewRow>
+            <TableViewRow class="tikklrSettingsRow" layout="horizontal">
+            	<View class="iconSocial icon-facebook"/>
+            	<View class="iconSocial icon-twitter"/>
+            	<View class="iconSocial icon-pinterest"/>
+            	<View class="iconSocial icon-tumblr"/>
+            </TableViewRow> -->
+    
+    		<!-- Alerts section  -->
+            <!-- <TableViewRow class="tikklrSectionRow" visible="false">
+            	<Label class="extraBold greenFont" backgroundColor="transparent" text="ALERTS"/>
+            </TableViewRow>
+            <TableViewRow class="tikklrSettingsRow" title="Enable Push Alerts">
+            	<Switch id="enablePush" onChange="enablePushChanged" class="tikklrMenuSwitch"/>
+            </TableViewRow>
+            <TableViewRow class="tikklrSettingsRow" title="Pull messages to Inbox">
+            	<Switch id="pullMessages" onChange="pullMessagesChanged" class="tikklrMenuSwitch"/>
+            </TableViewRow> -->
+    
+    		<!-- Notifications section  -->
+  			<!-- <TableViewRow class="tikklrSectionRow" visible="false">
+            	<Label class="extraBold greenFont" backgroundColor="transparent" text="NOTIFICATIONS"/>
+            </TableViewRow>
+            <TableViewRow class="tikklrSettingsRow" title="New follower notice">
+            	<Switch id="followers" onChange="followersChanged" class="tikklrMenuSwitch"/>
+            </TableViewRow>
+            <TableViewRow class="tikklrSettingsRow" title="Latest tikks news">
+            	<Switch id="tikksNews" onChange="tikksNewsChanged" class="tikklrMenuSwitch"/>
+            </TableViewRow>
+            <TableViewRow class="tikklrSettingsRow" title="Studio messages">
+            	<Switch id="studioMessages" onChange="studioMessagesChanged" class="tikklrMenuSwitch"/>
+            </TableViewRow>
+            <TableViewRow class="tikklrSettingsRow" title="Pull messages to Inbox">
+            	<Switch id="pullMessages2" onChange="pullMessagesChanged" class="tikklrMenuSwitch"/>
+            </TableViewRow> -->
+            
+            <!-- Age Conset section  -->
+        	<!-- <TableViewRow class="tikklrSectionRow" visible="false">
+            	<Label class="extraBold greenFont" backgroundColor="transparent" text="AGE CONSENT"/>
+            </TableViewRow>
+            <TableViewRow class="tikklrSettingsRow" title="I am over 14 years old">
+            	<Switch id="consent" onChange="consentChanged" class="tikklrMenuSwitch"/>
+            </TableViewRow> -->
+            
+			<!-- Sign Out section  -->
+    		<TableViewRow class="tikklrSectionRow" visible="false">
+            	<Label class="extraBold greenFont" backgroundColor="transparent" text=""/>
+            </TableViewRow> 
+        	<TableViewRow>
+            	<Button class="signOut" onClick="logout" title="SIGN OUT"/>
+        	</TableViewRow>
+        
+        	<!-- Delete section  -->
+	        <!-- <TableViewSection id="sectionDelete" visible="false">
+	        	<HeaderView>
+	            	<View class="settingsSection transparentBackground" layout="vertical"> 
+						<Label class="extraBold greenFont" backgroundColor="transparent" text=""/>
+					</View>
+				</HeaderView>
+           		<TableViewRow>
+	            	<Button class="delete" onClick="deleteAccount" title="DELETE ACCOUNT"/>
+	        	</TableViewRow>
+	        </TableViewSection> -->
+	        
+	        <!--  Edit Profile section  -->
+	        <TableViewSection id="sectionEditProfile">
+	        	<HeaderView>
+	            	<View class="settingsSection transparentBackground" layout="vertical"> 
+						<Label class="extraBold greenFont" backgroundColor="transparent" text=""/>
+					</View>
+				</HeaderView>
+           		<TableViewRow>
+	            	<Button class="delete" onClick="gotoUrl" url="" title="EDIT PROFILE"/>
+	        	</TableViewRow>
+	        </TableViewSection>
+	        
+	        <!--  Get Help section  -->
+	        <TableViewSection id="sectionDelete">
+	        	<HeaderView>
+	            	<View class="settingsSection transparentBackground" layout="vertical"> 
+						<Label class="extraBold greenFont" backgroundColor="transparent" text=""/>
+					</View>
+				</HeaderView>
+           		<TableViewRow>
+	            	<Button class="delete" onClick="gotoUrl" url="https://tikklr.freshdesk.com" title="GET HELP"/>
+	        	</TableViewRow>
+	        </TableViewSection>
+	        
+	        <!--  Terms section  -->
+	        <TableViewSection id="sectionDelete">
+	        	<HeaderView>
+	            	<View class="settingsSection transparentBackground" layout="vertical"> 
+						<Label class="extraBold greenFont" backgroundColor="transparent" text=""/>
+					</View>
+				</HeaderView>
+           		<TableViewRow>
+	            	<Button class="delete" onClick="gotoUrl" url="http://company.tikklr.com/terms/" title="TERMS"/>
+	        	</TableViewRow>
+	        </TableViewSection>
+	        
+	        <!--  Privacy section  -->
+	        <TableViewSection id="sectionDelete">
+	        	<HeaderView>
+	            	<View class="settingsSection transparentBackground" layout="vertical">
+						<Label class="extraBold greenFont" backgroundColor="transparent" text=""/>
+					</View>
+				</HeaderView>
+           		<TableViewRow>
+	            	<Button class="delete" onClick="gotoUrl" url="http://company.tikklr.com/privacy" title="PRIVACY"/>
+	        	</TableViewRow>
+	        </TableViewSection>
+	     </TableView>
+	</View>
+</Alloy>

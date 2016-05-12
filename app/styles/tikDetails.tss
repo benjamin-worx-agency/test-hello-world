@@ -1,0 +1,145 @@
+".shareRow": {
+	top: "-40",
+	left: Ti.Platform.displayCaps.platformWidth,
+	width: Ti.Platform.displayCaps.platformWidth,
+	backgroundColor: Alloy.Globals.TikklrBlack,
+	height: "40",
+	layout: "horizontal"
+}
+
+".featuredTitleRow": {
+	top: 0,
+	width: Ti.UI.FILL,
+	backgroundColor: Alloy.Globals.TikklrWhite,
+	height: Ti.UI.SIZE,
+}
+
+".featuerdNodeLabel": {
+	color: Alloy.Globals.TikklrGreen,
+	left: "10",
+	top: "0",
+	height: "40",
+	right: "90",
+	font: {
+		fontSize: "18pt",
+		fontFamily: "Substance-ExtraBold",
+	},
+}
+
+".featuerdNodeViews": {
+	color: Alloy.Globals.TikklrBlack,
+	left: "10",
+	top: "40",
+	font: {
+		fontSize: "10pt",
+		fontFamily: "Substance-Medium",
+	},	
+}
+
+".featuredShare": {
+	backgroundImage: "molecule.png",
+	width: "35",
+	height: "35",
+	right: "50",
+}
+
+".featuredStar": {
+	backgroundImage: "star.png",
+	width: "35",
+	height: "35",
+	right: "5",
+}
+
+".featuredFlag": {
+	backgroundImage: "tikklrFlagGreen.png",
+	width: "35",
+	height: "35",
+	right: "5",
+}
+
+".profileTableHeader": {
+	layout: "vertical",
+	height: "80",
+	backgroundColor: "transparent"
+}
+
+".tikDetailsTable": {
+	separatorColor: "transparent",
+	top: 0,
+    bottom: 0,
+	backgroundColor: Alloy.Globals.TikklrWhite,
+}
+
+".tikDetailsTableContainer": {
+	top: 0,
+    bottom: 0,
+	backgroundColor: Alloy.Globals.TikklrWhite,
+	layout: "absolute",
+}
+
+".profileNodeRow": {
+	left: 5,
+	right: 5,
+	top: 5,
+	width: Ti.Platform.displayCaps.platformWidth,
+	layout: 'horizontal',
+	height: "100%",
+	backgroundColor: Alloy.Globals.TikklrWhite
+}
+
+".followingNodeLabel": {
+	left: 5,
+	top: 0,
+	font: {
+		fontSize: "12pt",
+		fontFamily: "Substance-ExtraBold" 
+	},
+	color: Alloy.Globals.TikklrGreen
+}
+
+".followingNodeUser": {
+	left: 5,
+	font: {
+		fontSize: "10pt",
+		fontFamily: "Substance-ExtraBold" 
+	},
+	color: Alloy.Globals.TikklrGreen,	
+}
+
+".tikDetailsView":{
+	layout: "vertical"
+}
+
+".player": {
+	top: 0,
+	width: Ti.UI.FILL,
+	height: "180",
+	zIndex: 100,
+}
+
+".nodeTags": {
+	color: Alloy.Globals.TikklrGreen,
+	left: "10",
+	top: "0",
+	right: "90",
+	font: {
+		fontSize: "14pt",
+		fontFamily: "Substance-ExtraBold",
+	},
+}
+
+".tagsLabel": {
+	color: Alloy.Globals.TikklrBlack,
+	left: "10",
+	top: "5",
+	right: "90",
+	font: {
+		fontSize: "12pt",
+		fontFamily: "Substance-Medium",
+	},
+}
+
+".playerArea": {
+	height: "180",
+}
+

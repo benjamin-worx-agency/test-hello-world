@@ -1,0 +1,829 @@
+".followingTableInnerBox": {
+	top: 5,
+	left: 5,
+	right: 5,
+	height: Ti.UI.SIZE,
+	backgroundColor: "transparent",
+}
+
+".profileFollowingNodeThumb": {
+	left: 5,
+	top: 5,
+	width: 45,
+	height: 45,
+}
+
+".userThumb": {
+	left: 5,
+	top: 0,
+	width: 50,
+	height: 50,
+	bottom: 5, 
+}
+
+".profileTableRow": {
+	height: 87,
+	width: "100%"
+}
+
+".followingLabelsBox": {
+	top: 0,
+	height: Ti.UI.SIZE,
+	left: 60,
+	width:170,
+	layout: "vertical"
+}
+
+".profileInfoNodeLabel": {
+	backgroundColor: "transparent",
+	color: Alloy.Globals.TikklrWhite,
+	font: {
+		size: "15pt",
+		fontFamily: "Substance-ExtraBold"
+	},
+	top: 5,
+	left: 5,	
+}
+
+".listShareRow": {
+	top: "0",
+	left: Ti.Platform.displayCaps.platformWidth,
+	width: Ti.Platform.displayCaps.platformWidth,
+	backgroundColor: Alloy.Globals.TikklrBlack,
+	height: "40",
+	layout: "horizontal"
+}
+
+".featuredUserThumb": {
+	left: "2",
+	top: "2",
+	width: "60",
+	height: "50",
+}
+
+".followingUserButton": {
+	right: "5",
+	top: "5",
+	bottom: "5",
+	width: "62",
+	height: "42",
+	backgroundImage: "following.png",
+	backgroundColor: Alloy.Globals.TikklrGreen,
+	visible: "false",
+}
+
+".followButton": {
+	right: "5",
+	top: "5",
+	bottom: "5",
+	width: "62",
+	height: "42",
+	backgroundImage: "follow.png",
+	backgroundColor: "transparent",
+}
+
+".scrollableItemsList": {
+	top: "80",
+	height: Ti.UI.FILL,
+	left: 0,
+ 	orientationModes: [
+        Ti.UI.PORTRAIT
+    ],
+    backgroundColor: "transparent",
+    scrollingEnabled: "false",
+    showPagingControl: "false",  
+}
+
+".termsSwitch": {
+	left: "65",
+	onTint: Alloy.Globals.TikklrGreen,
+}
+	
+".approveButton": {
+	top: 0,
+	left: "30",
+	width: "40",
+	height: "40",
+	backgroundImage: "approve-red.png",
+	backgroundColor: Alloy.Globals.TikklrWhite,
+}
+
+".closeButton": {
+	top: 0,
+	left: 0,
+	width: "40",
+	height: "40",
+	backgroundImage: "cancel-white.png",
+	backgroundColor: Alloy.Globals.TikklrRed,
+}
+
+".refreshLabel":{
+	bottom: 10,
+	left: 60,
+	width: 200,
+	height: 100,
+	color: Alloy.Globals.TikklrGreen
+}
+
+".tikklrSmallTextField":{
+	height: '32',
+	width: '269',
+	top: Alloy.Globals.PaddingTop,
+	left: Alloy.Globals.PaddingLeft,
+	right: Alloy.Globals.PaddingRight,
+	bottom: Alloy.Globals.PaddingBottom,
+	backgroundColor: Alloy.Globals.TikklrLoginBlack,
+	returnKeyType: Titanium.UI.RETURNKEY_DONE,
+	font: {
+		fontFamily: 'Substance-ExtraBold',
+		fontSize: '20pt',
+		fontWeight: 'bold'
+	},
+	color: Alloy.Globals.TikklrGreen,
+	autocapitalization: Titanium.UI.TEXT_AUTOCAPITALIZATION_NONE,
+	opacity: 0.7,
+	paddingLeft: 10,
+	zIndex: 100,
+}
+
+".tikklrUploadTextField": {
+	height: '32',
+	width: '269',
+	top: Alloy.Globals.PaddingTop,
+	left: 21,
+	right: Alloy.Globals.PaddingRight,
+	bottom: Alloy.Globals.PaddingBottom,
+	backgroundColor: Alloy.Globals.TikklrLoginBlack,
+	returnKeyType: Titanium.UI.RETURNKEY_DONE,
+	font: {
+		fontFamily: 'Substance-ExtraBold',
+		fontSize: '15pt',
+		fontWeight: 'bold'
+	},
+	color: Alloy.Globals.TikklrGreen,
+	autocapitalization: Titanium.UI.TEXT_AUTOCAPITALIZATION_NONE,
+	opacity: 0.7,
+	paddingLeft: 10,
+	zIndex: 100,
+}
+
+".videoImage": {
+	width: "310",
+	height: "82"
+}
+
+".featuredGalleryTable": {
+	rowHeight: Ti.UI.SIZE,
+	separatorColor: "transparent",
+	separatorStyle: Titanium.UI.iPhone.TableViewSeparatorStyle.NONE
+}
+
+".featuredTableRow": {
+	height: Ti.UI.SIZE,
+	selectionStyle: "NONE",
+}
+
+".nodeRow": {
+	top: 0,
+	left: 0,
+	width: Ti.Platform.displayCaps.platformWidth,
+	layout: 'absolute',
+	height: Ti.UI.SIZE,
+	zIndex: 50,
+	backgroundColor: Alloy.Globals.TikklrBlack
+}
+
+".infoRow": {
+	top: "40",
+	zIndex: 100,
+	left: Ti.Platform.displayCaps.platformWidth,
+	width: Ti.Platform.displayCaps.platformWidth,
+	height: Ti.UI.SIZE,
+	backgroundColor: Alloy.Globals.TikklrBlack,
+	opacity: 0.9,
+	layout: "vertical",
+}
+
+".nodeThumb": {
+	left: 0,
+	top: 0,
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE
+}
+
+".infoNodeTags":{
+	left: "5",
+	bottom: "5",
+	font: {
+		fontSize: "12pt",
+		fontFamily: "Substance-Medium"
+         },
+	color : Alloy.Globals.TikklrBlack
+}
+
+".backButton": {
+	left: "20",
+	width: "40",
+	height: "40",
+	backgroundColor: "transparent",
+	backgroundImage: "back.png",
+	selectedBackgroundImage: "back-pressed.png"
+}
+
+"#loginWindow": {
+	height: '100%',
+	width: '100%',
+	backgroundColor: 'white',
+}
+
+"#mainWindow": {
+	top: 0,
+	height: '100%',
+	width: '100%',
+	backgroundColor: Alloy.Globals.TikklrGray
+}
+
+".signOut": {
+	width: Ti.UI.FILL,
+	height: "50",
+	backgroundColor: Alloy.Globals.TikklrDarkGray,
+	color: Alloy.Globals.TikklrSettingsText
+}
+
+".delete": {
+	width: Ti.UI.FILL,
+	height: "50",
+	// backgroundColor: Alloy.Globals.TikklrRed,
+	backgroundColor: Alloy.Globals.TikklrGreen,
+	color: "white",
+}
+
+".container": {
+	top: 0,
+	left: 0,
+	width: Ti.Platform.displayCaps.platformWidth,
+	height: '100%',
+ 	orientationModes: [
+        Ti.UI.LANDSCAPE_LEFT,
+        Ti.UI.LANDSCAPE_RIGHT,
+        Ti.UI.PORTRAIT
+    ],
+}
+
+".profileNodeThumb": {
+	top: 5,
+	bottom: 5,
+	width: "310"
+}
+
+".profileRowInfoBox": {
+	left: 5,
+	right: "50%",
+	top: 5,
+	bottom: 5,
+	backgroundColor: Alloy.Globals.TikklrGreen,
+	opacity: 0.7,
+	zIndex: 50,
+}
+
+".menuContainer": {
+	top: 0,
+	left: 0,
+	width: "100%",
+	height: "100%",
+ 	orientationModes: [
+        Ti.UI.LANDSCAPE_LEFT,
+        Ti.UI.LANDSCAPE_RIGHT,
+        Ti.UI.PORTRAIT
+    ],
+    backgroundColor: Alloy.Globals.TikklrGray,
+    color: '#ffe700',
+    navBarHidden: false,
+    layout: "vertical"
+}
+
+".bigRow": {
+	height: 100,
+	backgroundColor: "transparent",
+	layout: "horizontal"
+}
+
+".row": {
+	height: 60,
+	backgroundColor: "transparent",
+	layout: "horizontal",
+	zIndex: 100,
+}
+
+".whiteFont":{
+	color: "white"
+}
+
+".logoRow": {
+	height: '32%',
+}
+
+".imageContainer": {
+	height: '200',
+}
+
+".tikklrLoginLogo": {
+	top: '120',
+	width: '155',
+	height: '50',
+}
+
+".tikklrLogoView": {
+	layout: 'vertical',
+}
+
+".btn": {
+	font: {
+		fontFamily: 'Substance-ExtraBold',
+		fontSize: '20pt',
+	},
+	color: Alloy.Globals.TikklrGreen,
+}
+
+".label": {
+	font: {
+		fontSize: '12pt',
+		fontFamiliy: 'Substance-Medium'
+	},
+	color: Alloy.Globals.TikklrGreen,
+}
+
+".copyrightLabel": {
+	font: {
+		fontSize: '9pt',
+		fontFamily: 'Substance',
+	},
+	color: Alloy.Globals.TikklrGreen,
+	bottom: '2',
+}
+
+".loginLabel": {
+	textAlign: 'center',
+}
+
+".resetPassword": {
+	textAlign: 'center',
+	width: Titanium.UI.SIZE,
+	font: {
+		fontSize: "20pt",
+		fontFamily: 'Substance-ExtraBold',
+	}
+}
+
+".smallPrint": {
+	textAlign: 'center',
+	width: Titanium.UI.SIZE,
+	font: {
+		fontSize: "10pt",
+		fontFamily: 'Substance',
+	},
+	color: Alloy.Globals.TikklrDarkGray,
+}
+
+".loginView": {
+	top: "0",
+	layout: "vertical",
+	width: "100%",
+	height: "100%",
+}
+
+".demoText": {
+	textAlign: "center",
+	font: {
+		fontSize: '14pt',
+		fontFamiliy: 'Substance-Medium'
+	},
+}
+
+".brandsPayDemo": {
+	top: '5',
+	width: '156',
+	height: '159',
+}
+
+".shootDemo": {
+	top: '5',
+	width: '164',
+	height: '162',
+}
+
+".shotLoading": {
+	top: '5',
+	width: '125',
+	height: '182',
+}
+
+".youDemo": {
+	top: '5',
+	width: '105',
+	height: '156',
+}
+
+".resetPassword": {
+	textAlign: 'center',
+	width: Titanium.UI.SIZE,
+	font: {
+		fontSize: "20pt",
+		fontFamily: 'Substance-ExtraBold',
+	}
+}
+
+"#loginLoading": {
+	top: 100
+}
+
+//Settings page
+".settingsTable": {
+	allowsSelection: false,
+	top: Alloy.Globals.PaddingTop,
+	left: "10",
+	bottom: Alloy.Globals.PaddingBottom,
+	paddingRight: "20",
+	right: "10",
+	showVerticalScrollIndicator: false,
+	separatorStyle: "none"
+}
+
+".settingsTableHeader": {
+	height: "40",
+	font: {
+		fontFamily: 'Substance-ExtraBold',
+		fontSize: '30pt',
+	},
+	color: Alloy.Globals.TikklrSettingsText,
+}
+
+".settingsTableHeaderLabel": {
+	font: {
+		fontFamily: 'Substance-ExtraBold',
+		fontSize: '25pt',
+	},
+	color: Alloy.Globals.TikklrSettingsText,
+}
+
+".settingsTableSave":{
+	top: 0,
+	right:  "20",
+	textAlign: "center",
+	width: "50",
+	height: "40",
+	font: {
+		fontFamily: 'Substance-ExtraBold',
+		fontSize: '10pt',
+	},
+	backgroundColor: Alloy.Globals.TikklrGreen,
+	color: Alloy.Globals.TikklrSettingsText,
+	backgroundDisabledColor: Alloy.Globals.TikklrGray,
+}
+
+".tikklrSectionRow": {
+	paddingRight: "10",
+	right: "10",
+	left: "2",
+	font: {
+		fontFamily: 'Substance-Regular',
+		fontSize: '15pt',
+	},
+	backgroundColor: "transparent"
+}
+
+
+".tikklrSettingsRow": {
+	paddingRight: "10",
+	right: "10",
+	left: "2",
+	font: {
+		fontFamily: 'Substance-Regular',
+		fontSize: '15pt',
+	},
+	color: Alloy.Globals.TikklrTextGray,
+	backgroundColor: "transparent"
+}
+
+".tikklrSettingsTextField": {
+	height: '21',
+	width: '175',
+	top: Alloy.Globals.PaddingTop,
+	left: "100",
+	right: Alloy.Globals.PaddingRight,
+	bottom: Alloy.Globals.PaddingBottom,
+	returnKeyType: Titanium.UI.RETURNKEY_DONE,
+	font: {
+		fontFamily: 'Substance-Bold',
+		fontSize: '15pt',
+	},
+	color: Alloy.Globals.TikklrSettingsText,
+	autocapitalization: Titanium.UI.TEXT_AUTOCAPITALIZATION_NONE,
+	paddingLeft: 10,
+	zIndex: 1000
+}
+
+".settingsSection": {
+	height: "30",
+}
+
+".transparentBackground": {
+	backgroundColor: "transparent",
+}
+
+".greenFont": {
+	color: Alloy.Globals.TikklrGreen
+}
+
+".extraBold": {
+	font: {
+		fontFamily: 'Substance-ExtraBold',
+		fontSize: '20pt',
+	},
+}
+
+".iconSocial" : {
+	left: "30", 
+	width: "40",
+	height: "40",
+}
+
+".tikklrHeaderLabel": {
+	backgroundColor: "transparent",
+	color: Alloy.Globals.TikklrGreen,
+	font: {
+		fontSize: "20pt",
+		fontFamily: "Substance-ExtraBold",
+	},
+	height: 35,
+	zIndex: 1000
+}
+
+".tikklrHeader": {
+	top: 0,
+	width: Ti.Platform.displayCaps.platformWidth,
+	backgroundColor: "transparent",
+	height: "40"
+}
+
+".searchHeader": {
+	top: 0,
+	height: "85",
+	backgroundColor: Alloy.Globals.TikklrGreen,
+}
+
+".searchPage": {
+	top: 0,
+	layout: "vertical",
+	backgroundColor: "black",
+}
+
+".activityIndicator": {
+	color: Alloy.Globals.TikklrGreen,
+	font: {
+		fontSize: '14pt',
+		fontFamily: "Substance-ExtraBold",
+	},
+	message: 'Loading...',
+	width: "50",
+	height: "50",
+	indicatorColor: "red",
+	zIndex: 1000,
+}
+
+".errorMessage": {
+	color: Alloy.Globals.TikklrRed,
+	font: {
+		fontSize: '14pt',
+		fontFamily: "Substance-ExtraBold",
+	},
+	width: Ti.UI.SIZE,
+	height: "50",
+	zIndex: 1000,
+}
+
+".successMessage": {
+	color: Alloy.Globals.TikklrGreen,
+	font: {
+		fontSize: '14pt',
+		fontFamily: "Substance-ExtraBold",
+	},
+	width: "100",
+	height: "50",
+	zIndex: 1000,
+}
+
+".searchIcon": {
+	width: "40",
+	height: "40",
+}
+
+".searchIconLarge": {
+	width: "60",
+	height: "60",
+}
+
+".activityHolder": {
+	backgroundColor: "black",
+	opacity: 0.9,
+	zIndex: 100,
+	width: "100",
+	height: "75",
+	borderRadius: "5",
+	borderColor: Alloy.Globals.TikklrGreen,
+}
+
+".errorMessageHolder": {
+	backgroundColor: "black",
+	opacity: 0.9,
+	zIndex: 1000,
+	width: Ti.UI.SIZE,
+	height: "50",
+	borderRadius: "5",
+	borderColor: Alloy.Globals.TikklrRed,
+}
+
+".successMessageHolder": {
+	backgroundColor: "black",
+	opacity: 0.9,
+	zIndex: 1000,
+	width: "200",
+	height: "50",
+	borderRadius: "5",
+	borderColor: Alloy.Globals.TikklrGreen,
+}
+
+".noResultsBox": {
+	height: Ti.UI.FILL,
+	width: Ti.UI.FILL,
+	backgroundColor: Alloy.Globals.TikklrGray,
+}
+
+".noResultsLabel": {
+	color: Alloy.Globals.TikklrGreen,
+	font: {
+		fontFamily: 'Substance-ExtraBold',
+		fontSize: '20pt',
+		fontWeight: 'bold'
+	},
+	
+}
+
+//Icons styles
+".icon-wheel-settings":{
+	backgroundImage: "wheelSettings.png"
+}
+
+".icon-linkedIn": {
+	backgroundImage: "linkedIn.png",		
+}
+
+".icon-facebook":{
+	backgroundImage: "facebook.png",
+}
+
+".icon-twitter":{
+	backgroundImage: "twitter.png",
+}
+
+".icon-wheel-search":{
+	backgroundImage: "wheelSearch.png"
+}
+
+".icon-wheel-brief":{
+	backgroundImage: "wheelBrief.png"
+} 
+
+".icon-wheel-rewards":{
+	backgroundImage: "wheelRewards.png"
+}
+
+".icon-wheel-profile":{
+	backgroundImage: "wheelProfile.png"
+}
+
+".icon-wheel-discover":{
+	backgroundImage: "wheelDiscover.png"
+}
+
+".icon-wheel-create":{
+	backgroundImage: "wheelCreate.png"
+}
+
+".icon-wheel-settings-live":{
+	backgroundImage: "wheelSettingsLive.png"
+}
+
+".icon-wheel-search-live":{
+	backgroundImage: "wheelSearchLive.png"
+}
+
+".icon-wheel-brief-live":{
+	backgroundImage: "wheelBriefLive.png"
+}
+
+".icon-wheel-inbox":{
+	backgroundImage: "wheelMessages.png"
+}
+
+".icon-wheel-inbox-live":{
+	backgroundImage: "wheelMessagesLive.png"
+}
+
+".icon-wheel-rewards-live":{
+	backgroundImage: "wheelRewardsLive.png"
+}
+
+".icon-wheel-profile-live":{
+	backgroundImage: "wheelProfileLive.png"
+}
+
+".icon-wheel-discover-live":{
+	backgroundImage: "wheelDiscoverLive.png"
+}
+
+".icon-wheel-create-live":{
+	backgroundImage: "wheelCreateLive.png"
+}
+
+".icon-settings": {
+	backgroundImage: "settings.png"
+}
+
+".icon-back": {
+	backgroundImage: "back.png",
+	selectedBackgroundImage: "back-pressed.png"
+}
+
+".icon-close": {
+	backgroundImage: "close.png",
+	selectedBackgroundImage: "close-pressed.png"
+}
+
+".icon-discover":{
+	backgroundImage: "discover.png",
+}
+
+".icon-share":{
+	backgroundImage: "molecule.png",
+}
+
+".icon-film-roll":{
+	backgroundImage: "film-roll.png",
+}
+
+".icon-film-roll-pressed":{
+	backgroundImage: "film-roll-pressed.png",
+}
+
+".icon-trash":{
+	backgroundImage: "trash.png",
+}
+
+".icon-star":{
+	backgroundImage: "star.png",
+}
+
+".icon-mail":{
+	backgroundImage: "mail.png",
+}
+
+".icon-gear":{
+	backgroundImage: "gear.png",
+}
+
+".icon-shrink":{
+	backgroundImage: "shrink.png",
+}
+
+".icon-magnify":{
+	backgroundImage: "magnify.png",
+}
+
+".icon-home":{
+	backgroundImage: "home.png",
+}
+
+".icon-rewind":{
+	backgroundImage: "rewind.png",
+}
+
+".icon-resize":{
+	backgroundImage: "resize.png",
+}
+
+".icon-replay":{
+	backgroundImage: "replay.png",
+}
+
+".icon-rewards":{
+	backgroundImage: "rewards.png",
+}
+
+".icon-pinterest": {
+	backgroundImage: "pinterest.png",
+}
+
+".icon-tumblr": {
+	backgroundImage: "tumblr.png",
+}

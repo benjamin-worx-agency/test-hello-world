@@ -1,0 +1,23 @@
+<Alloy>
+
+	<View id="hashSearch" class="searchPage">
+		<View class="searchHeader">
+			<TextField id="search" class="searchHeaderTextField" onBlur="search" hintText="SEARCH PEOPLE">
+				<View backgroundImage="search-at.png" class="hashTextFieldIcon"/> 
+			</TextField>
+		</View>
+		<View layout="absolute">
+			<View id="tableView">
+				<TableView id="searchUsersTable" class="featuredGalleryTable" 
+				onDragEnd="galleryDragEnd" onScrollend="tableScrollEnd" onScroll="tableScroll" dataTransform="userTransform">
+				<HeaderPullView>
+						<Require id="tableHeader" src="partials/tableHeader"></Require> 
+				</HeaderPullView>
+			</TableView>
+			</View>
+			<View id="noResults" class="noResultsBox" visible="false">
+				<Label class="noResultsLabel" text="NO RESULTS FOUND"/>
+			</View>
+		</View>
+	</View>
+</Alloy>

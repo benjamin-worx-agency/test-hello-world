@@ -1,0 +1,308 @@
+".shareRow": {
+	top: "-40",
+	left: Ti.Platform.displayCaps.platformWidth,
+	width: Ti.Platform.displayCaps.platformWidth,
+	backgroundColor: Alloy.Globals.TikklrBlack,
+	height: "40",
+	layout: "horizontal"
+}
+
+".briefBrandRow": {
+	top: 0,
+	width: Ti.UI.FILL,
+	backgroundColor: Alloy.Globals.TikklrGray,
+	height: Ti.UI.SIZE,
+}
+
+".featuredTitleRow": {
+	top: 0,
+	width: Ti.UI.FILL,
+	backgroundColor: Alloy.Globals.TikklrBriefBackground,
+	height: Ti.UI.SIZE,
+}
+
+".featuerdNodeLabel": {
+	color: Alloy.Globals.TikklrGreen,
+	left: "10",
+	top: "0",
+	height: "40",
+	right: "10",
+	font: {
+		fontSize: "18pt",
+		fontFamily: "Substance-ExtraBold",
+	},
+}
+
+".featuerdNodeViews": {
+	color: Alloy.Globals.TikklrSettingsText,
+	left: "10",
+	top: "40",
+	font: {
+		fontSize: "10pt",
+		fontFamily: "Substance-Medium",
+	},	
+}
+
+".featuredShare": {
+	backgroundImage: "molecule.png",
+	width: "35",
+	height: "35",
+	right: "50",
+}
+
+".featuredStar": {
+	backgroundImage: "star.png",
+	width: "35",
+	height: "35",
+	right: "5",
+}
+
+".profileTableHeader": {
+	layout: "vertical",
+	height: "80",
+	backgroundColor: "transparent"
+}
+
+".followingNodeLabel": {
+	left: 5,
+	top: 0,
+	font: {
+		fontSize: "12pt",
+		fontFamily: "Substance-ExtraBold" 
+	},
+	color: Alloy.Globals.TikklrGreen
+}
+
+".followingNodeUser": {
+	left: 5,
+	font: {
+		fontSize: "10pt",
+		fontFamily: "Substance-Regular" 
+	},
+	color: Alloy.Globals.TikklrGreen,	
+}
+
+".briefDetailsView":{
+	layout: "vertical",
+	backgroundColor: Alloy.Globals.TikklrBriefBackground,
+}
+
+".player": {
+	top: 0,
+	width: Ti.UI.FILL,
+	height: "180",
+	zIndex: 100,
+}
+
+".nodeTags": {
+	color: Alloy.Globals.TikklrGreen,
+	left: "10",
+	top: "0",
+	right: "90",
+	font: {
+		fontSize: "14pt",
+		fontFamily: "Substance-ExtraBold",
+	},
+}
+
+".tagsLabel": {
+	color: Alloy.Globals.TikklrSettingsText,
+	left: "10",
+	top: "5",
+	right: "90",
+	font: {
+		fontSize: "12pt",
+		fontFamily: "Substance-Medium",
+	},
+}
+
+".playerArea": {
+	height: "180",
+	backgroundColor: Alloy.Globals.TikklrGray
+}
+
+".categoryIcon": {
+	right: "22",
+	top: "5",
+	height: "40",
+	width: "40",	
+}
+
+".briefCuponRow": {
+	height: "53",	
+	top: "0",
+	left: "0",
+	right: "0",
+	backgroundColor: Alloy.Globals.TikklrLightGreen,
+	layout: "horizontal"
+}
+
+".cuponValue": {
+	left: "0",
+	color: Alloy.Globals.TikklrGreen,
+	font: {
+		fontSize: "25pt",
+		fontFamily: "Substance-ExtraBold",
+	},
+	width: "80",
+	height: "53",
+	textAlign: "center",
+}
+
+".iconCupon": {
+	left: "15",
+	width: "40",
+	height: "40"
+}
+
+".iconBriefCamera": {
+	width: "53",
+	height: "53",
+}
+
+".briefSummary": {
+	top: "5",
+	height: "50",
+	left: "5",
+	right: "5",
+	backgroundColor: Alloy.Globals.TikklrGray,
+	color: Alloy.Globals.TikklrSettingsText,
+	font: {
+		fontSize: "15pt",
+		fontFamily: "Substance-Medium",
+	}
+}
+
+".briefSummaryText": {
+	backgroundColor: Alloy.Globals.TikklrGray,
+	color: Alloy.Globals.TikklrSettingsText,
+	font: {
+		fontSize: "15pt",
+		fontFamily: "Substance-Medium",
+	}
+}
+
+".briefBody": {
+	top: "5",
+	height: Ti.UI.SIZE,
+	left: "5",
+	right: "5",
+	backgroundColor: Alloy.Globals.TikklrGray,
+	color: Alloy.Globals.TikklrSettingsText,
+	font: {
+		fontSize: "15pt",
+		fontFamily: "Substance-Regular",
+	}
+}
+
+".briefBodyText": {
+	backgroundColor: Alloy.Globals.TikklrGray,
+	color: Alloy.Globals.TikklrSettingsText,
+	font: {
+		fontSize: "15pt",
+		fontFamily: "Substance-Regular",
+	}
+}
+
+".cameraIconsRow": {
+	left: "0",
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	layout: "horizontal",
+	backgroundColor: Alloy.Globals.TikklrGreen
+}
+
+".cuponRightCell": {
+	left: "10",
+	top: "0",
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	layout: "horizontal",
+	backgroundColor: Alloy.Globals.TikklrLightGreen,
+}
+
+".currentTikksLabel": {
+	bottom: "0",
+	height: "50",
+	backgroundColor: Alloy.Globals.TikklrBriefBackground,
+	color: Alloy.Globals.TikklrGreen,
+	font: {
+		fontSize: "20pt",
+		fontFamily: "Substance-ExtraBold",
+	},
+}
+
+".icon-camera": {
+	image: "photo-gray.png",
+}
+
+".icon-selfie": {
+	image: "selfie-gray.png",
+}
+
+".icon-video-camera": {
+	image: "video-gray.png"
+}
+
+".icon-camera-dead": {
+	image: "photo-dead.png",
+}
+
+".icon-selfie-dead": {
+	image: "selfie-dead.png",
+}
+
+".icon-video-camera-dead": {
+	image: "video-dead.png"
+}
+
+".briefEndDate": {
+	top: "5",
+	height: "95",
+	left: "5",
+	right: "5",
+	backgroundColor: Alloy.Globals.TikklrGray
+}
+
+".dateIcon": {
+	backgroundImage: "hourglass-green.png",
+	left: "5",
+	width: "50",
+	height: "50"
+}
+
+".dateText": {
+	right: "5",
+	backgroundColor: Alloy.Globals.TikklrGray,
+	color: Alloy.Globals.TikklrSettingsText,
+	font: {
+		fontSize: "15pt",
+		fontFamily: "Substance-Regular",
+	}
+}
+
+"#justForScroll": {
+	height: "475"
+}
+
+
+".briefNodeThumb": {
+	left: 0,
+	top: 0,
+	width: Ti.UI.FILL,
+	height: "180"
+}
+
+".briefTikklrHeader": {
+	top: 0,
+	width: Ti.Platform.displayCaps.platformWidth,
+	backgroundColor: Alloy.Globals.TikklrBlack,
+	height: "40"
+}
+
+".briefFeaturedTitleRow": {
+	top: 0,
+	width: Ti.UI.FILL,
+	backgroundColor: Alloy.Globals.TikklrGray,
+	height: Ti.UI.SIZE,	
+}

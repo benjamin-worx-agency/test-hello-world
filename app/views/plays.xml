@@ -1,0 +1,26 @@
+<Alloy>
+	<View id="playsView" class="container">
+		<View class="tikklrHeader">
+			<Button class="backButton" onClick="backClicked"/>
+			<Label class="tikklrHeaderLabel" text="DISCOVER" />
+		</View>
+		<View class="discoverHeader">
+			<View id="playsBB" class="buttonBar">
+				<Button id="featuredBtn" class="tikklrDiscoverButton" title="FEATURED"/>
+	            <Button id="popularBtn" class="tikklrDiscoverButton" title="LATEST"/>
+	            <Button id="browseBtn" class="tikklrDiscoverButton" title="BROWSE"/>
+			</View>
+		</View>
+		<ScrollableView id="playsWindow" class="scrollableItemsList" >
+			<View id="featured">
+		    	<Require type="view" src="featured" loadGallery="true" />
+			</View>
+			<View id="popular">
+				<Require type="view" src="featured" loadGallery="false"  />
+			</View>
+			<View id="browse">
+				<Require type="view" src="browse" />
+			</View>
+	    </ScrollableView>
+	 </View>
+</Alloy>

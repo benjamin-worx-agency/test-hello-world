@@ -1,0 +1,189 @@
+
+".featuredTitleRow": {
+	top: 0,
+	opacity: 0.7,
+	height: Ti.UI.SIZE,
+	width: Ti.UI.FILL,
+	backgroundColor: Alloy.Globals.TikklrWhite,
+}
+
+".featuerdNodeLabel": {
+	color: Alloy.Globals.TikklrGreen,
+	left: "10",
+	top: "7",
+	height: "25",
+	right: "90",
+	font: {
+		fontSize: "15pt",
+		fontFamily: "Substance-ExtraBold",
+	},	
+}
+
+".featuerdNodeViews": {
+	color: Alloy.Globals.TikklrBlack,
+	left: "10",
+	top: "25",
+	right: "90",
+	font: {
+		fontSize: "10pt",
+		fontFamily: "Substance-ExtraBold",
+	},
+}
+
+".featuredShare": {
+	backgroundImage: "molecule.png",
+	width: "40",
+	height: "40",
+	right: "50",
+	defaultImage: "true",
+}
+
+".featuredStar": {
+	backgroundImage: "star.png",
+	width: "40",
+	height: "40",
+	right: "5",
+	defaultImage: "true",
+}
+
+".infoCategoryIcon": {
+	top: "0",
+	left: "0",
+	width: "40",
+	height: "40",
+	defaultImage: "true",
+}
+
+".infoTagsLabel": {
+	font: {
+		fontSize: "12pt",
+		fontFamily: "Substance-Medium"
+	},
+	color: Alloy.Globals.TikklrGreen,
+	top: "0",
+	left: "10",
+	right: "10",
+	height: "20",
+}
+
+".infoTags": {
+	top: "0",
+	left: "10",
+	right: "10",
+	height: "25",
+}
+
+".infoTag": {
+	top: "0",
+	left: "0",
+	color: Alloy.Globals.TikklrGreen,	
+	font: {
+		fontSize: "14pt",
+		fontFamily: "Substance-ExtraBold"
+	},
+}
+
+".rewardsTableRow": {
+	top: "40",
+	height: Ti.UI.SIZE,
+	layout: "vertical",
+	backgroundColor: "transparent",
+	width: "100%",
+}
+
+".rewardsDiscountRow": {
+	top: "0",
+	height: Ti.UI.SIZE,
+	layout: "horizontal",
+	backgroundColor: "transparent",
+	width: "100%",
+}
+
+".rewardsBrandRow": {
+	top: "0",
+	height: Ti.UI.SIZE,
+	layout: "horizontal",
+	backgroundColor: "transparent",
+	width: "100%",
+}
+
+".brandImage": {
+	left: "10",
+	top: "0",
+	width: "50",
+	height: "50",
+}
+
+".rewardDescriptionText": {
+	left: "2",
+	top: "0",
+	width: Ti.UI.FILL,
+	height: "75",
+	font: {
+		fontSize: "22pt",
+		fontFamily: "Substance-ExtraBold" 
+	},
+	color: Alloy.Globals.TikklrWhite
+}
+
+".rewardColor": {
+	top: 0,
+	left: 0,
+	width: Ti.UI.FILL,
+	height: "180",
+}
+
+".rewardTypeImage": {
+	width: "90",
+	height: "70",
+	top: "5",
+	left: "10",
+}
+
+".rewardsTableViewRow": {
+	height: "180",
+	selectionStyle: "NONE",	
+}
+
+".brandNameText": {
+	left: "5",
+	bottom: "0",
+	font: {
+		fontSize: "12pt",
+		fontFamily: "Substance-ExtraBold" 
+	},
+	color: Alloy.Globals.TikklrWhite
+}
+
+".expirationText": {
+	left: "20",
+	top: "2",
+	bottom: "2",
+	font: {
+		fontSize: "12pt",
+		fontFamily: "Substance-ExtraBold" 
+	},
+	color: Alloy.Globals.TikklrWhite
+}
+
+".expirationTextValue": {
+	left: "2",
+	bottom: "0",
+	font: {
+		fontSize: "12pt",
+		fontFamily: "Substance-ExtraBold" 
+	},
+	color: Alloy.Globals.TikklrWhite
+}
+
+".rewardsScrollableItemsList": {
+	top: "40",
+	height: Ti.UI.FILL,
+	left: 0,
+ 	orientationModes: [
+        Ti.UI.PORTRAIT
+    ],
+    backgroundColor: "transparent",
+    scrollingEnabled: "false",
+    showPagingControl: "false",
+}

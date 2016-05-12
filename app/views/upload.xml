@@ -1,0 +1,35 @@
+<Alloy>
+	<Collection id="Categories" src="Node" instance="true"/>
+	<Model id="Kaltura" src="Kaltura" instance="true"/>
+	
+	<View id="uploadView">
+		<View id="tikklrHeader" class="tikklrHeader">
+			<Button id="backButton" class="backButton" onClick="backClicked"/>
+			<Label class="tikklrHeaderLabel" text="UPLOAD" />
+		</View>
+		<View id="imageContainer" class="uploadImageContainer" >
+			<View class="row" top="10">
+				<TextField class="tikklrUploadTextField" onBlur="uploadBlur" onFocus="uploadFocus" id="title" hintText="TITLE"/>
+			</View>
+			<View class="row" top="-15">
+				<TextField class="tikklrUploadTextField" layout="horizontal" id="tags" onBlur="tagsBlur" onFocus="uploadFocus" hintText="TAGS"/>
+			</View>
+			<View class="row" top="-15">
+				<TextField class="tikklrUploadTextField" id="category" onBlur="uploadBlur" onFocus="categoryFocus" hintText="CATEGORY"/>
+			</View>
+			<View visible="false" id="categoryPicker" class="categories" onClick="rowClicked">
+				<TableView dataCollection="$.Categories" class="categoriesTable">
+					<TableViewRow class="categoryRow" layout="absolute">
+						<Label class="categoryTitle" text="{title}"/>
+						<!-- <ImageView class="categoryIcon" image="{local_image}" /> -->
+						<View class="categoryIcon" backgroundImage="{local_image}"/>
+					</TableViewRow>
+				</TableView>
+			</View>
+		</View>
+
+		<View id="progressBar" visible="{$.Kaltura.uploadInProgress}" width="{$.Kaltura.uploadProgressFor620px}" class="progressBar"/>
+
+		<Button id="uploadButton" onClick="uploadToKalturaBtnClick" class="uploadButton" title="UPLOAD"/>
+	</View>
+</Alloy>

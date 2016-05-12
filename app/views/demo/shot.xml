@@ -1,0 +1,10 @@
+<Alloy>
+	<View class="loginView" id="demoYou">
+		<View class="row imageContainer" layout="vertical">
+			<View class="shootDemo" backgroundImage="shootDemo.png"/>
+		</View>
+		<View class="row" top="-20" layout="vertical">
+			<Label class="label demoText" text="Create beautiful, crazy,\nfunny and inspiring content\nand share it with the world" />
+		</View>
+	</View>
+</Alloy>

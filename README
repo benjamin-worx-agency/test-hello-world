@@ -1,0 +1,16 @@
+Welcome to Tikklr mobile app - built using Titanium
+
+Tikklr mobile app, comes to provide a full video application where users upload their videos and get paid by the brands.
+
+*** IMPORTANT NOTICE ***
+Because of GIT's file size limitations, we couldn't push the Aviary SDK framework.
+Before running this app, please download the framework from here (the whole directory as a zip file):
+https://drive.google.com/open?id=0BxnPNH6ypV9WV2Z3RWwwRmY1T0U&authuser=1
+
+Unzip it, and put it in the project, under the folder:
+modules/iphone/com.ghkim.aviary/4.2.1/
+
+----------------------------------
+Tikklr mobile app is Copyright (c) 2008-2013 by Tikklr.com and Panda OS, Inc. All Rights Reserved.
+
+Tikklr mobile app is liecenced under the

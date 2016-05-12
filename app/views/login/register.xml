@@ -1,0 +1,21 @@
+<Alloy>
+	<View class="loginView" id="registerView">
+		<Label id="message" class="label loginLabel" text="create your account"/>
+		<View class="row">
+			<TextField class="tikklrSmallTextField" id="email" hintText="EMAIL"/>
+		</View>
+		<View class="row">
+			<View left="25" layout="horizontal">
+				<Label class="label loginLabel" onSingletap="termsClicked" text="I agree to terms of use"/>
+				<Switch class="termsSwitch" id="termsSwitch" value=""/>
+			</View>
+		</View>
+		<View class="bigRow" layout="vertical">
+			<Label class="smallPrint" id="loginTerms" text="By registering with Tikklr.com\nyou are hereby agreeing\nto our"/>
+			<Label class="smallPrint greenFont" id="loginTermsLink" onSingletap="termsClicked" text="Terms and Privacy policy."/>
+		</View>
+		<View class="row" top="-15" layout="vertical">
+			<Button id="registerButton" class="btn" onSingletap="drupalRegister">SIGN UP</Button>
+		</View>
+	</View>
+</Alloy>

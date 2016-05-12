@@ -1,0 +1,10 @@
+<Alloy>
+	<View class="loginView" id="demoYou">
+		<View class="row imageContainer" layout="vertical">
+			<View class="youDemo" backgroundImage="youDemo.png"/>
+		</View>
+		<View class="row" top="-20" layout="vertical">
+			<Label class="label demoText" text="We all have a story to tell\nabout the brands we love -\nThings that make us smile..." />
+		</View>
+	</View>
+</Alloy>

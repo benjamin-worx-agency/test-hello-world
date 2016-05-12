@@ -1,0 +1,474 @@
+".shareRow": {
+	top: "-40",
+	left: Ti.Platform.displayCaps.platformWidth,
+	width: Ti.Platform.displayCaps.platformWidth,
+	backgroundColor: Alloy.Globals.TikklrBlack,
+	height: "40",
+	layout: "horizontal"
+}
+
+".briefBrandRow": {
+	top: 0,
+	width: Ti.UI.FILL,
+	backgroundColor: Alloy.Globals.TikklrGray,
+	height: Ti.UI.SIZE,
+}
+
+".featuredTitleRow": {
+	top: 0,
+	width: Ti.UI.FILL,
+	backgroundColor: Alloy.Globals.TikklrBriefBackground,
+	height: Ti.UI.SIZE,
+}
+
+".featuerdNodeLabel": {
+	color: Alloy.Globals.TikklrGreen,
+	left: "10",
+	top: "0",
+	height: "40",
+	right: "90",
+	font: {
+		fontSize: "18pt",
+		fontFamily: "Substance-ExtraBold",
+	},
+}
+
+".featuerdNodeViews": {
+	color: Alloy.Globals.TikklrSettingsText,
+	left: "10",
+	top: "40",
+	font: {
+		fontSize: "10pt",
+		fontFamily: "Substance-Medium",
+	},	
+}
+
+".featuredShare": {
+	backgroundImage: "molecule.png",
+	width: "35",
+	height: "35",
+	right: "50",
+}
+
+".featuredStar": {
+	backgroundImage: "star.png",
+	width: "35",
+	height: "35",
+	right: "5",
+}
+
+".profileTableHeader": {
+	layout: "vertical",
+	height: "80",
+	backgroundColor: "transparent"
+}
+
+".followingNodeLabel": {
+	left: 5,
+	top: 0,
+	font: {
+		fontSize: "12pt",
+		fontFamily: "Substance-ExtraBold" 
+	},
+	color: Alloy.Globals.TikklrGreen
+}
+
+".followingNodeUser": {
+	left: 5,
+	font: {
+		fontSize: "10pt",
+		fontFamily: "Substance-Regular" 
+	},
+	color: Alloy.Globals.TikklrGreen,	
+}
+
+".briefDetailsView":{
+	layout: "vertical",
+	backgroundColor: Alloy.Globals.TikklrRewardOrange,
+}
+
+".player": {
+	top: 0,
+	width: Ti.UI.FILL,
+	height: "180",
+	zIndex: 100,
+}
+
+".nodeTags": {
+	color: Alloy.Globals.TikklrGreen,
+	left: "10",
+	top: "0",
+	right: "90",
+	font: {
+		fontSize: "14pt",
+		fontFamily: "Substance-ExtraBold",
+	},
+}
+
+".tagsLabel": {
+	color: Alloy.Globals.TikklrSettingsText,
+	left: "10",
+	top: "5",
+	right: "90",
+	font: {
+		fontSize: "12pt",
+		fontFamily: "Substance-Medium",
+	},
+}
+
+".playerArea": {
+	height: "180",
+	backgroundColor: Alloy.Globals.TikklrGray
+}
+
+".categoryIcon": {
+	right: "22",
+	top: "5",
+	height: "40",
+	width: "40",	
+}
+
+".briefCuponRow": {
+	height: "53",	
+	top: "0",
+	left: "0",
+	right: "0",
+	backgroundColor: Alloy.Globals.TikklrLightGreen,
+	layout: "horizontal"
+}
+
+".cuponValue": {
+	left: "0",
+	color: Alloy.Globals.TikklrGreen,
+	font: {
+		fontSize: "25pt",
+		fontFamily: "Substance-ExtraBold",
+	},
+	width: "80",
+	height: "53",
+	textAlign: "center",
+}
+
+".iconCupon": {
+	left: "15",
+	width: "40",
+	height: "40",
+	backgroundImage: "percent-voucher.png" //TODO: get discount type and change the image
+}
+
+".iconBriefCamera": {
+	width: "53",
+	height: "53",
+}
+
+".briefSummary": {
+	top: "5",
+	height: "50",
+	left: "5",
+	right: "5",
+	backgroundColor: Alloy.Globals.TikklrGray,
+	color: Alloy.Globals.TikklrSettingsText,
+	font: {
+		fontSize: "15pt",
+		fontFamily: "Substance-Medium",
+	}
+}
+
+".briefSummaryText": {
+	backgroundColor: Alloy.Globals.TikklrGray,
+	color: Alloy.Globals.TikklrSettingsText,
+	font: {
+		fontSize: "15pt",
+		fontFamily: "Substance-Medium",
+	}
+}
+
+".rewardBox": {
+	layout: "vertical",
+	top: "5",
+	height: Ti.UI.SIZE,
+	left: "5",
+	right: "5",
+	backgroundColor: Alloy.Globals.TikklrRewardDarkOrange,
+	color: Alloy.Globals.TikklrWhite,
+	font: {
+		fontSize: "15pt",
+		fontFamily: "Substance-Regular",
+	}
+}
+
+".rewardBoxTitle": {
+	backgroundColor: Alloy.Globals.TikklrRewardsDarkOrange,
+	color: Alloy.Globals.TikklrWhite,
+	font: {
+		fontSize: "15pt",
+		fontFamily: "Substance-ExtraBold",
+	}
+}
+
+".rewardBoxText": {
+	backgroundColor: Alloy.Globals.TikklrRewardsDarkOrange,
+	color: Alloy.Globals.TikklrWhite,
+	font: {
+		fontSize: "14pt",
+		fontFamily: "Substance-Regular",
+	}
+}
+
+".cameraIconsRow": {
+	left: "0",
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	layout: "horizontal",
+	backgroundColor: Alloy.Globals.TikklrGreen
+}
+
+".cuponRightCell": {
+	left: "10",
+	top: "0",
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+	layout: "horizontal",
+	backgroundColor: Alloy.Globals.TikklrLightGreen,
+}
+
+".rewardEndDate": {
+	top: "5",
+	height: "95",
+	left: "5",
+	right: "5",
+	backgroundColor: Alloy.Globals.TikklrRewardsRed
+}
+
+".dateIcon": {
+	backgroundImage: "hourglass-green.png",
+	left: "5",
+	width: "50",
+	height: "50"
+}
+
+".dateText": {
+	right: "5",
+	backgroundColor: Alloy.Globals.TikklrRewardsRed,
+	color: Alloy.Globals.TikklrWhite,
+	font: {
+		fontSize: "15pt",
+		fontFamily: "Substance-Regular",
+	}
+}
+
+"#justForScroll": {
+	bottom: "0"
+}
+
+
+".rewardQRImage": {
+	left: 10,
+	right: 10,
+	top: 10,
+	bottom: 10
+}
+
+".briefTikklrHeader": {
+	top: 0,
+	width: Ti.Platform.displayCaps.platformWidth,
+	backgroundColor: Alloy.Globals.TikklrBlack,
+	height: "40"
+}
+
+".briefFeaturedTitleRow": {
+	top: 0,
+	width: Ti.UI.FILL,
+	backgroundColor: Alloy.Globals.TikklrGray,
+	height: Ti.UI.SIZE,	
+}
+
+
+".featuredTitleRow": {
+	top: 0,
+	opacity: 0.7,
+	height: Ti.UI.SIZE,
+	width: Ti.UI.FILL,
+	backgroundColor: Alloy.Globals.TikklrWhite,
+}
+
+".featuerdNodeLabel": {
+	color: Alloy.Globals.TikklrGreen,
+	left: "10",
+	top: "7",
+	height: "25",
+	right: "90",
+	font: {
+		fontSize: "15pt",
+		fontFamily: "Substance-ExtraBold",
+	},	
+}
+
+".featuerdNodeViews": {
+	color: Alloy.Globals.TikklrBlack,
+	left: "10",
+	top: "25",
+	right: "90",
+	font: {
+		fontSize: "10pt",
+		fontFamily: "Substance-ExtraBold",
+	},
+}
+
+".featuredShare": {
+	backgroundImage: "molecule.png",
+	width: "40",
+	height: "40",
+	right: "50",
+	defaultImage: "true",
+}
+
+".featuredStar": {
+	backgroundImage: "star.png",
+	width: "40",
+	height: "40",
+	right: "5",
+	defaultImage: "true",
+}
+
+".infoCategoryIcon": {
+	top: "0",
+	left: "0",
+	width: "40",
+	height: "40",
+	defaultImage: "true",
+}
+
+".infoTagsLabel": {
+	font: {
+		fontSize: "12pt",
+		fontFamily: "Substance-Medium"
+	},
+	color: Alloy.Globals.TikklrGreen,
+	top: "0",
+	left: "10",
+	right: "10",
+	height: "20",
+}
+
+".infoTags": {
+	top: "0",
+	left: "10",
+	right: "10",
+	height: "25",
+}
+
+".infoTag": {
+	top: "0",
+	left: "0",
+	color: Alloy.Globals.TikklrGreen,	
+	font: {
+		fontSize: "14pt",
+		fontFamily: "Substance-ExtraBold"
+	},
+}
+
+".rewardsTableRow": {
+	top: "40",
+	height: Ti.UI.SIZE,
+	layout: "vertical",
+	backgroundColor: "transparent",
+	width: "100%",
+}
+
+".rewardsDiscountRow": {
+	top: "0",
+	height: Ti.UI.SIZE,
+	layout: "horizontal",
+	backgroundColor: "transparent",
+	width: "100%",
+}
+
+".rewardsBrandRow": {
+	top: "0",
+	height: Ti.UI.SIZE,
+	layout: "horizontal",
+	backgroundColor: "transparent",
+	width: "100%",
+}
+
+".brandImage": {
+	left: "10",
+	top: "0",
+	width: "50",
+	height: "50",
+}
+
+".rewardDescriptionText": {
+	left: "2",
+	top: "0",
+	width: Ti.UI.FILL,
+	height: "75",
+	font: {
+		fontSize: "22pt",
+		fontFamily: "Substance-ExtraBold" 
+	},
+	color: Alloy.Globals.TikklrWhite
+}
+
+".rewardColor": {
+	top: 0,
+	left: 0,
+	width: Ti.UI.FILL,
+	height: "180",
+}
+
+".rewardTypeImage": {
+	width: "90",
+	height: "70",
+	top: "5",
+	left: "10",
+}
+
+".rewardsTableViewRow": {
+	height: "180",
+	selectionStyle: "NONE",	
+}
+
+".brandNameText": {
+	left: "5",
+	bottom: "0",
+	font: {
+		fontSize: "12pt",
+		fontFamily: "Substance-ExtraBold" 
+	},
+	color: Alloy.Globals.TikklrWhite
+}
+
+".expirationText": {
+	right: "0",
+	bottom: "0",
+	font: {
+		fontSize: "12pt",
+		fontFamily: "Substance-ExtraBold" 
+	},
+	color: Alloy.Globals.TikklrWhite
+}
+
+".expirationTextValue": {
+	left: "2",
+	right: "5",
+	bottom: "0",
+	font: {
+		fontSize: "12pt",
+		fontFamily: "Substance-ExtraBold" 
+	},
+	color: Alloy.Globals.TikklrWhite
+}
+
+".rewardsScrollableItemsList": {
+	top: "40",
+	height: Ti.UI.FILL,
+	left: 0,
+ 	orientationModes: [
+        Ti.UI.PORTRAIT
+    ],
+    backgroundColor: "transparent",
+    scrollingEnabled: "false",
+    showPagingControl: "false",
+}

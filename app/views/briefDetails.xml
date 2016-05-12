@@ -1,0 +1,75 @@
+<Alloy>
+	<Model src="Node" instance="true" id="currentNode"/>
+	<Collection src="Node" instance="true" id="currentNodeList"/>
+	
+	<View id="briefDetailsView" class="briefDetailsView">
+		<View class="briefTikklrHeader">
+			<Button class="backButton" onClick="backClicked"/>
+			<Label class="tikklrHeaderLabel" text="BRIEF" />
+		</View>
+		<TableView class="briefDetailsView" id="justForScroll" dataCollection="currentNodeList" dataTransform="briefTransform">
+			<TableViewRow selectionStyle="none" class="briefDetailsView">
+				<!-- Change to scrollable view -->
+				<View class="briefNodeThumb" backgroundImage="finger-background.png">
+					<Widget id="briefImage" class="briefNodeThumb" src="com.baboonmedia.remoteimage" image="{thumb}">
+					</Widget>
+				</View>
+				<View class="briefFeaturedTitleRow">
+					<Label text="{titleUpperCase}" class="featuerdNodeLabel"/>
+					 <!-- <View class="featuredShare" onClick="shareThisVideo"/>
+					<View class="featuredStar" onClick="starThisVideo"/> -->
+					   
+					<View class="featuredShare" onClick="shareThisVideo"/>
+					<View class="featuredStar" onClick="starThisVideo"/>
+					
+					<!-- These two line above were commeted out as you can see above - By Ben.  This causes an error  -->
+					
+					
+					
+				</View>
+				<View id="shareRow" class="shareRow">
+					<View id="closeShare" onClick="closeShareBox" class="closeButton" />
+					<View id="facebook" onClick="shareClicked" class="iconSocial icon-facebook" />
+					<View id="twitter" onClick="shareClicked" class="iconSocial icon-twitter" />
+					<View id="linkedIn" onClick="shareClicked" class="iconSocial icon-linkedIn" />
+					<View id="approveShare" onClick="closeShareBox" class="approveButton" />
+				</View>
+				<View class="briefBrandRow" >
+					<View class="followingTableInnerBox">
+						<Widget id="image" class="userThumb" src="com.baboonmedia.remoteimage" image="{brandLogoUrl}">
+						</Widget>							
+						<View class="followingLabelsBox">
+							<Label text="{brandName}" class="followingNodeLabel" />
+							<Label text="{available}" class="followingNodeUser" />
+						</View>
+						<View class="categoryIcon" backgroundImage="{categoryImage}"/>
+					</View>
+				</View>
+				<View class="briefCuponRow" id="imagesContainer" >
+					<View class="cameraIconsRow" page="create" id="cameraIconsRow" onClick="handleClick">
+						<View id="capture" class="iconBriefCamera" backgroundImage="{isVideoImage}"/>
+						<View id="gallery" class="iconBriefCamera" backgroundImage="{thumbAllowedImage}"/>
+						<View id="selfie" class="iconBriefCamera" backgroundImage="{selfieImage}"/>
+					</View>
+					<View class="cuponRightCell" >
+						<Widget class="iconCupon" src="com.baboonmedia.remoteimage" image="{voucher_image}">
+						</Widget>
+						<!-- <View class="iconCupon"/> -->
+						<Label class="cuponValue" text="{voucherPercent}"/>
+					</View>			
+				</View>
+				<View class="briefSummary">
+					<Label class="briefSummaryText" text="{briefSummary}"/>
+				</View>
+				<View class="briefBody">
+					<Label class="briefBodyText" text="{briefFull}" />
+				</View>
+				<View class="briefEndDate">
+					<View class="dateIcon"/>
+					<Label class="dateText" text="{endDate}" />
+				</View>
+			</TableViewRow>
+		</TableView>
+		<Button class="currentTikksLabel" onClick="seeCurrentTiks" title="SEE CURRENT TIKKS"/>
+	</View>
+</Alloy>

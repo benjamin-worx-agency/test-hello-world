@@ -1,0 +1,67 @@
+<Alloy>
+	<Collection id="Rewards" src="Node" instance="true"></Collection>
+	
+	<View id="rewardsView" class="container">
+		<View id="tikklrRewardsHeader" class="tikklrHeader">
+			<Button class="backButton" onClick="backClicked"/>
+			<Label class="tikklrHeaderLabel" text="REWARDS" />
+		</View>
+		
+		<ScrollableView id="rewardsWindow" class="rewardsScrollableItemsList" >
+			<View layout="absolute">
+				<View id="tableView">
+					<TableView class="featuredGalleryTable" dataCollection="$.Rewards" 
+						onDragEnd="galleryDragEnd" onScrollend="tableScrollEnd" 
+						onScroll="tableScroll" dataTransform="rewardTransform" 
+						onClick="rowClicked" onSwipe="redeemReward">
+						<HeaderPullView>
+							<Require id="tableHeader" src="partials/tableHeader"></Require> 
+						</HeaderPullView>
+						<TableViewRow class="rewardsTableViewRow" nodeId="{nid}" nodeType="reward">
+							<View class="nodeRow">
+								<!-- Background color for the reward  -->
+								<View backgroundColor="{rewardBackgroundColor}" class="rewardColor" />
+								
+								<!-- Item header and button  -->
+								<View class="featuredTitleRow">
+									<Label text="{titleUpperCase}" class="featuerdNodeLabel"/>
+									<!-- <View class="featuredShare" onClick="shareVideo" visible="true"/> -->
+								</View>
+								
+								<!-- Share line (coming from the right)  -->
+								<View class="listShareRow">
+									<View id="closeShare" onClick="handleCloseClicked" class="closeButton" />
+									<View id="facebook" onClick="shareClicked" class="iconSocial icon-facebook" />
+									<View id="twitter" onClick="shareClicked" class="iconSocial icon-twitter" />
+									<View id="linkedIn" onClick="shareClicked" class="iconSocial icon-linkedIn" />
+									<View id="approveShare" onClick="handleCloseClicked" class="approveButton" />
+								</View>
+								
+								<!-- Rest of reward data -->
+								<View class="rewardsTableRow">
+									<View class="rewardsDiscountRow">
+										<View class="rewardTypeImage" id="rewardTypeImage" backgroundImage="{thumb}"/>
+										<Label text="{reward_description}" class="rewardDescriptionText" />
+									</View>
+									<View class="rewardsBrandRow">
+										<Widget class="brandImage" src="com.baboonmedia.remoteimage" id="RemoteImage" image="{brandImage}">
+										</Widget>
+										<Label text="{reward_brand_name}" class="brandNameText" />
+									</View>
+									<View class="rewardsBrandRow">
+										<Label text="EXP:" class="expirationText" />
+										<Label text="{expirationDate}" class="expirationTextValue" />
+									</View>
+								</View>
+							</View>
+						</TableViewRow>
+					</TableView>
+				</View>	
+			
+				<View id="noResults" class="noResultsBox" visible="false">
+					<Label class="noResultsLabel" text="NO RESULTS FOUND"/>
+				</View>
+			</View>
+		</ScrollableView>
+	</View>
+</Alloy>

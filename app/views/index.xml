@@ -1,0 +1,17 @@
+<Alloy>
+	<Window id="mainWindow" fullscreen="true" onClick="mainWindowClick">
+		<View id="mainView" backgroundImage="tikklrBackground.jpg" class="container">
+			<Require id="actionMenuRequire" type="view" src="actionMenu"/>
+			<Label class="copyrightLabel" text="©Tikklr 2015"/>
+		</View>
+		<View id="errorMessageHolder" visible="false" class="errorMessageHolder">
+			<ActivityIndicator message="Oops something went wrong..." id="errorLabel" class="errorMessage" />
+		</View>
+		<View id="activityHolder" visible="false" class="activityHolder">
+			<ActivityIndicator id="activityIndicator" class="activityIndicator" />
+		</View>
+		<View id="successMessageHolder" visible="false" class="successMessageHolder">
+			<ActivityIndicator message="SUCCESS!!!" id="successMessage" class="successMessage" />
+		</View>
+	</Window>
+</Alloy>

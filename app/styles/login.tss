@@ -1,0 +1,33 @@
+".forgotPassword": {
+	font: {
+		//fontSize: '11pt',
+		fontSize: '22pt',
+		fontFamily: 'Substance-ExtraBold',
+	},
+	top: '1',
+	left: '259',
+	height: "10"
+}
+
+".loginView": {
+	top: "0",
+	layout: "vertical",
+	width: "100%",
+	height: "100%",
+}
+
+".loginScroll": {
+	pagingControlOnTop: true,
+	pagingControlColor: "transparent",
+	height: "350",
+	showPagingControl:"true",
+	tintColor: Alloy.Globals.TikklrGreen
+}
+
+"#loginLoading": {
+	top: 100
+}
+
+".loginLabel": {
+	textAlign: 'center',
+}

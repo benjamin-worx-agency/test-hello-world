@@ -1,0 +1,39 @@
+
+".tikklrWheelImage": {
+	width: "42",
+	height: "42",
+	zIndex: 2500
+}
+
+".actionMenuView": {
+	backgroundColor: "transparent",
+	height: "60",
+	width: "50",
+	center : {x: "100%", y: "50%"},
+	zIndex: 100
+}
+
+".tikklrActionMenu": {
+	backgroundImage: "wheelLarge.png",
+	width: "77",
+	height: "77",
+	borderWidth: 0,
+	opacity: 0.8,
+	zIndex: 2000
+}
+
+".tikklrActionMenuButton": {
+	backgroundImage: "wheelSmall.png",
+	width: "77",
+	height: "77",
+	borderRadius: "19",
+	opacity: 0.4,
+}
+
+".tikklrActionMenuBlocker": {
+	backgroundColor: "transparent",
+	width: "92",
+	height: "92",
+	borderRadius: "23",
+	visible: false,
+}

@@ -1,0 +1,44 @@
+
+".tikklrDiscoverButton": {
+	width: "106",
+	height: Alloy.Globals.buttonBarHeight,
+	font: {
+		fontFamily: "Substance-ExtraBold",
+		fontSize: "15pt",
+	},
+	color: Alloy.Globals.TikklrGreen,
+	left: "0",
+	textAlign: "center",
+}
+
+".searchScrollableItemsList": {
+	top: "80",
+	height: Ti.UI.FILL,
+	left: 0,
+ 	orientationModes: [
+        Ti.UI.PORTRAIT
+    ],
+    backgroundColor: "transparent",
+    scrollingEnabled: "false",
+    showPagingControl: "false",
+}
+
+".buttonBar": {
+	color: Alloy.Globals.TikklrGreen,
+	left: 0,
+	top: 0,
+	width: Ti.UI.FILL,
+	backgroundColor: "black",
+	height: Alloy.Globals.buttonBarHeight, 
+	layout: "horizontal",
+}
+
+".searchButtonBar": {
+	color: Alloy.Globals.TikklrGreen,
+	left: 0,
+	top: "40",
+	width: Ti.UI.FILL,
+	backgroundColor: "black",
+	height: Alloy.Globals.buttonBarHeight, 
+	layout: "horizontal",
+}

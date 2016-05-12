@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ti:app xmlns:ti="http://ti.appcelerator.org">
+    <modules>
+        <module platform="iphone" version="1.7.3">ti.notificare</module>
+        <module platform="android" version="1.7.3">ti.notificare</module>
+        <module platform="iphone">uk.co.tbp.pushio</module>
+        <module platform="iphone">com.appcelerator.urlSession</module>
+        <module platform="iphone">com.yydigital.tintswitch</module>
+        <module platform="iphone">com.ghkim.aviary</module>
+        <module platform="iphone">ti.touchid</module>
+    </modules>
+    <id>com.tikklr.tikklrAppStore</id>
+    <name>tikklr</name>
+    <version>1.2.4</version>
+    <publisher>Tikklr</publisher>
+    <url>http://www.tikklr.com</url>
+    <description>Tikklr Application</description>
+    <copyright>2016 by Tikklr</copyright>
+    <icon>appicon.png</icon>
+    <persistent-wifi>false</persistent-wifi>
+    <prerendered-icon>false</prerendered-icon>
+    <statusbar-style>default</statusbar-style>
+    <statusbar-hidden>false</statusbar-hidden>
+    <fullscreen>true</fullscreen>
+    <navbar-hidden>false</navbar-hidden>
+    <analytics>true</analytics>
+    <guid>84f2d092-4b77-422e-9555-e70d86082d61</guid>
+    <property name="ti.ui.defaultunit" type="string">system</property>
+    <iphone>
+        <orientations device="iphone">
+            <orientation>Ti.UI.PORTRAIT</orientation>
+        </orientations>
+        <orientations device="ipad">
+            <orientation>Ti.UI.PORTRAIT</orientation>
+        </orientations>
+    </iphone>
+    <android xmlns:android="http://schemas.android.com/apk/res/android"/>
+    <mobileweb>
+        <precache/>
+        <splash>
+            <enabled>true</enabled>
+            <inline-css-images>true</inline-css-images>
+        </splash>
+        <theme>tikklr</theme>
+    </mobileweb>
+    <deployment-targets>
+        <target device="android">false</target>
+        <target device="blackberry">false</target>
+        <target device="ipad">false</target>
+        <target device="iphone">true</target>
+        <target device="mobileweb">false</target>
+        <target device="tizen">false</target>
+    </deployment-targets>
+    <sdk-version>5.2.2.GA</sdk-version>
+    <plugins>
+        <plugin version="1.4">ti.alloy</plugin>
+        <plugin version="1.0">ti.notificare</plugin>
+    </plugins>
+    <property name="ti.facebook.appid">172196406295610</property>
+    <ios>
+        <min-ios-ver>5.0</min-ios-ver>
+        <plist>
+            <dict>
+                <key>UIBackgroundModes</key>
+                <array>
+                    <string>remote-notification</string>
+                    <string>fetch</string>
+                </array>
+                <key>Aviary-API-Key</key>
+                <string>3e79b378dc915a01</string>
+                <key>APP_STORE_OR_AD_HOC_BUILD</key>
+                <string>NO</string>
+                <key>DEVELOPMENT_APP_KEY</key>
+                <string>UHOjws8nRZ2tSvrtGwoYOw</string>
+                <key>DEVELOPMENT_APP_SECRET</key>
+                <string>-IXxulcXQROxwssA3gikPw</string>
+                <key>PRODUCTION_APP_KEY</key>
+                <string>AOAKtF4pSCyFblelj0d3eQ</string>
+                <key>PRODUCTION_APP_SECRET</key>
+                <string>E-NEdvQ8Q9KsZTBX0eIf4Q</string>
+            </dict>
+        </plist>
+    </ios>
+    <property name="appc-app-id" type="string">570a3c9ff4e14b18235c6af2</property>
+</ti:app>

@@ -1,0 +1,154 @@
+//Icons styles
+".icon-wheel-settings":{
+	backgroundImage: "wheelSettings.png"
+}
+
+".icon-wheel-settings-live":{
+	backgroundImage: "wheelSettingsLive.png"
+}
+
+".icon-wheel-search":{
+	backgroundImage: "wheelSearch.png"
+}
+
+".icon-wheel-search-live":{
+	backgroundImage: "wheelSearchLive.png"
+}
+
+".icon-wheel-brief":{
+	backgroundImage: "wheelBrief.png"
+} 
+
+".icon-wheel-brief-live":{
+	backgroundImage: "wheelBriefLive.png"
+}
+
+".icon-wheel-inbox":{
+	backgroundImage: "wheelMessages.png"
+}
+
+".icon-wheel-inbox-live":{
+	backgroundImage: "wheelMessagesLive.png"
+}
+
+".icon-wheel-rewards":{
+	backgroundImage: "wheelRewards.png"
+}
+
+".icon-wheel-rewards-live":{
+	backgroundImage: "wheelRewardsLive.png"
+}
+
+".icon-wheel-profile":{
+	backgroundImage: "wheelProfile.png"
+}
+
+".icon-wheel-profile-live":{
+	backgroundImage: "wheelProfileLive.png"
+}
+
+".icon-wheel-discover":{
+	backgroundImage: "wheelDiscover.png"
+}
+
+".icon-wheel-discover-live":{
+	backgroundImage: "wheelDiscoverLive.png"
+}
+
+".icon-wheel-create":{
+	backgroundImage: "wheelCreate.png"
+}
+
+".icon-wheel-create-live":{
+	backgroundImage: "wheelCreateLive.png"
+}
+
+".icon-settings": {
+	backgroundImage: "settings.png"
+}
+
+".icon-back": {
+	backgroundImage: "back.png",
+	selectedBackgroundImage: "back-pressed.png"
+}
+
+".icon-close": {
+	backgroundImage: "close.png",
+	selectedBackgroundImage: "close-pressed.png"
+}
+
+".icon-discover":{
+	backgroundImage: "discover.png",
+}
+
+".icon-share":{
+	backgroundImage: "molecule.png",
+}
+
+".icon-film-roll":{
+	backgroundImage: "film-roll.png",
+}
+
+".icon-film-roll-pressed":{
+	backgroundImage: "film-roll-pressed.png",
+}
+
+".icon-trash":{
+	backgroundImage: "trash.png",
+}
+
+".icon-star":{
+	backgroundImage: "star.png",
+}
+
+".icon-mail":{
+	backgroundImage: "mail.png",
+}
+
+".icon-gear":{
+	backgroundImage: "gear.png",
+}
+
+".icon-shrink":{
+	backgroundImage: "shrink.png",
+}
+
+".icon-magnify":{
+	backgroundImage: "magnify.png",
+}
+
+".icon-home":{
+	backgroundImage: "home.png",
+}
+
+".icon-rewind":{
+	backgroundImage: "rewind.png",
+}
+
+".icon-resize":{
+	backgroundImage: "resize.png",
+}
+
+".icon-replay":{
+	backgroundImage: "replay.png",
+}
+
+".icon-rewards":{
+	backgroundImage: "rewards.png",
+}
+
+".icon-facebook":{
+	backgroundImage: "facebook.png",
+}
+
+".icon-twitter":{
+	backgroundImage: "twitter-bird.png",
+}
+
+".icon-pinterest":{
+	backgroundImage: "pinterest.png",
+}
+
+".icon-tumblr":{
+	backgroundImage: "tumblr.png",
+}

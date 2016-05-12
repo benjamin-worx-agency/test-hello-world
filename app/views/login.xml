@@ -1,0 +1,43 @@
+<Alloy>
+	<View id="loginWindow" backgroundImage="tikklrBackground.jpg" navBarHidden="true" zIndex="1500">
+		<View layout="vertical">
+			<Require id="logoMain" type="view" src="login/logo"/>
+			<ScrollableView id="loginScroll" class="loginScroll" onScrollend="scrollEnd">
+				<View class="loginView" id="loginView">
+					<View class="row" top="10">
+						<TextField class="tikklrSmallTextField" keyboardType="Titanium.UI.KEYBOARD_EMAIL" id="username" hintText="USERNAME"/>
+					</View>
+					<View class="row" top="-20">
+						<TextField id="password" class="tikklrSmallTextField" passwordMask="true" hintText="PASSWORD"/>
+						<Button class="forgotPassword label" onClick="forgotPassword" title="forgot?"/>
+					</View>
+					<View class="row" layout="vertical">
+						<Button id="loginButton" class="btn">SIGN IN</Button>
+					</View>
+					<View class="row" layout="vertical">
+						<Button id="registerButton" class="btn" onClick="showRegisterView">SIGN UP</Button>
+					</View>
+				</View>
+				<View id="demoYou">
+					<Require type="view" src="demo/you" />
+				</View>
+				<View id="demoShot">
+					<Require type="view" src="demo/shot" />
+				</View>
+				<View id="demoBrandsPay" last="true">
+					<Require type="view" src="demo/brandsPay" />
+				</View>
+			</ScrollableView>
+			<Label class="copyrightLabel" text="©Tikklr 2015"/>
+			<View id="registerView">
+				<Require type="view" src="login/register" />
+			</View>
+			<View id="forgotPassView">
+				<Require type="view" src="login/forgot" />
+			</View>
+		</View>
+		<View class="loginView" zIndex="100" id="loginLoading">
+			<Require type="view" src="loading" />
+		</View>
+	</View>
+</Alloy>

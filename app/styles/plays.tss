@@ -1,0 +1,29 @@
+
+".tikklrDiscoverButton": {
+	width: "106",
+	height: Alloy.Globals.buttonBarHeight,
+	font: {
+		fontFamily: "Substance-ExtraBold",
+		fontSize: "15pt",
+	},
+	color: Alloy.Globals.TikklrGreen,
+	left: "0",
+	textAlign: "center",
+}
+
+".buttonBar": {
+	color: Alloy.Globals.TikklrGreen,
+	left: 0,
+	top: 0,
+	width: Ti.UI.FILL,
+	backgroundColor: "black",
+	height: Alloy.Globals.buttonBarHeight, 
+	layout: "horizontal",
+}
+
+".discoverHeader": {
+	backgroundColor: Alloy.Globals.TikklrBlack,
+	width: Ti.UI.FILL,
+	height: "50",
+	top: "40",
+}

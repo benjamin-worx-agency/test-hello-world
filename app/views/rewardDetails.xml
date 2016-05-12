@@ -1,0 +1,79 @@
+<Alloy>
+	<Model src="Node" instance="true" id="currentNode"/>
+	<Collection src="Node" instance="true" id="currentNodeList"/>
+	
+	<View id="rewardDetailsView" class="briefDetailsView">
+		<View class="briefTikklrHeader">
+			<Button class="backButton" onClick="backClicked"/>
+			<Label class="tikklrHeaderLabel" text="REWARDS" />
+		</View>
+		<TableView class="briefDetailsView" id="justForScroll" dataCollection="currentNodeList" dataTransform="rewardTransform">
+			<TableViewRow selectionStyle="none" nodeId="{nid}" class="briefDetailsView">
+				<View class="nodeRow">
+					<!-- Background color for the reward  -->
+					<View backgroundColor="{rewardBackgroundColor}" class="rewardColor" />
+					
+					<!-- Item header and button  -->
+					<View class="featuredTitleRow">
+						<Label text="{titleUpperCase}" class="featuerdNodeLabel"/>
+						<!-- <View class="featuredShare" onClick="shareVideo" visible="true"/> -->
+					</View>
+					
+					<!-- Share line (coming from the right)  -->
+					<View class="listShareRow">
+						<View id="closeShare" onClick="handleCloseClicked" class="closeButton" />
+						<View id="facebook" onClick="shareClicked" class="iconSocial icon-facebook" />
+						<View id="twitter" onClick="shareClicked" class="iconSocial icon-twitter" />
+						<View id="linkedIn" onClick="shareClicked" class="iconSocial icon-linkedIn" />
+						<View id="approveShare" onClick="handleCloseClicked" class="approveButton" />
+					</View>
+					
+					<!-- Rest of reward data -->
+					<View class="rewardsTableRow">
+						<View class="rewardsDiscountRow">
+							<View class="rewardTypeImage" id="rewardTypeImage" backgroundImage="{thumb}"/>
+							<Label text="{reward_description}" class="rewardDescriptionText" />
+						</View>
+						<View class="rewardsBrandRow">
+							<Widget class="brandImage" src="com.baboonmedia.remoteimage" id="RemoteImage" image="{brandImage}">
+							</Widget>
+							<Label text="{reward_brand_name}" class="brandNameText" />
+							<Label text="EXP:" class="expirationText" />
+							<Label text="{expirationDate}" class="expirationTextValue" />
+						</View>
+					</View>
+				</View>
+				<!-- Change to scrollable view -->
+				<Widget id="rewardImage" class="rewardQRImage" src="com.baboonmedia.remoteimage" image="{qr_image}">
+				</Widget>
+				
+				<View id="shareRow" class="shareRow">
+					<View id="closeShare" onClick="closeShareBox" class="closeButton" />
+					<View id="facebook" onClick="shareClicked" class="iconSocial icon-facebook" />
+					<View id="twitter" onClick="shareClicked" class="iconSocial icon-twitter" />
+					<View id="linkedIn" onClick="shareClicked" class="iconSocial icon-linkedIn" />
+					<View id="approveShare" onClick="closeShareBox" class="approveButton" />
+				</View>
+				<View class="rewardBox">
+					<Label class="rewardBoxTitle" text="YOU REAP WHAT YOU SOW"></Label>
+					<Label class="rewardBoxText" text="{reward_description}" />
+				</View>
+				<View class="rewardEndDate">
+					<View class="dateIcon"/>
+					<Label class="dateText" text="{endDate}" />
+				</View>
+				<View class="rewardBox">
+					<Label class="rewardBoxTitle" text="WHAT DO I DO NOW?"></Label>
+					<Label class="rewardBoxText" text="Swipe this reward to the right to redeem it!" />
+				</View>
+				<View class="rewardBox">
+					<Label class="rewardBoxTitle" text="TERMS & CONDITIONS"></Label>
+					<Label class="rewardBoxText" text="{terms_and_conditions}" />
+				</View>
+			</TableViewRow>
+		</TableView>
+	</View>
+</Alloy>
+
+
+

@@ -1,0 +1,15 @@
+version: 1.7.3
+apiversion: 2
+architectures: armeabi armeabi-v7a x86
+description: notificare-titanium-android
+author: Notificare
+license: MIT
+copyright: Copyright (c) 2016 by Notificare
+respackage: re.notifica
+
+# these should not be edited
+name: notificare-titanium-android
+moduleid: ti.notificare
+guid: 8664442b-01c0-4167-925b-b93b2c8eaf2f
+platform: android
+minsdk: 5.1.2.GA

@@ -1,0 +1,7 @@
+<Alloy>
+	<View class="row logoRow">
+		<View id="tikklrLogoView" class="tikklrLogoView">
+			<View class="tikklrLoginLogo" backgroundImage="logoTikklrTransparent.png"/>
+		</View>
+	</View>
+</Alloy>

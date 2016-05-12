@@ -1,0 +1,7 @@
+<Alloy>
+	<View class="loginView" id="loginLoading">
+		<View class="row imageContainer" layout="vertical">
+			<View class="shotLoading" backgroundImage="youShotBrandsPay.png"/>
+		</View>
+	</View>
+</Alloy>

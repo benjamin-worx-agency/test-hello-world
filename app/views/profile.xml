@@ -1,0 +1,70 @@
+<Alloy>
+	<Model id="User" src="User" instance="true"/>
+	<Collection id="TotalCount" src="DrupalView" instance="true"/>
+	
+	<View id="profileView" class="container" >
+	<!-- Header part -->
+		<View id="tikklrProfileHeader" class="tikklrHeader">
+			<Button class="backButton" onClick="backClicked"/>
+			<Label class="tikklrHeaderLabel" text="PROFILE" />
+		</View>
+	
+		<View top="40">
+		<!-- Profile Box -->
+			<View id="profileBox" class="profileBox">
+				<Widget src="com.baboonmedia.remoteimage" id="profileImage" class="profileImage" image="{$.User.pictureUrl}">
+				</Widget>
+				<Label> This is version 1.2.4</Label>
+				<Label id="profileUserName" text="{$.User.@realname}" class="profileUserName"/>
+				<Label id="profileUserBio" text="{$.User.bio}" class="profileUserBio"/>
+				<View class="profileButtonsBox">
+					<Button visible="false" id="ratingButton" class="ratingButton" backgroundImage="Stars_Tikklr_Bench_Gold.png" onClick="buttonClicked">
+						<Label class="buttonBottomLabel" text="RATING"/>
+					</Button>
+					<Button id="tikksButton" class="tikksButton" onClick="buttonClicked">
+						<Label id="videoCount" class="buttonTopLabel" text="{$.User.videoCount}"/>
+						<Label class="buttonBottomLabel" text="TIKKS" color="Alloy.Globals.TikklrBlack"/>
+					</Button>
+					<Button id="followersButton" class="followersButton" onClick="buttonClicked">
+						<Label id="followersCount" class="buttonTopLabel" text="{$.User.followers}"/>
+						<Label class="buttonBottomLabel" text="FOLLOWERS"/>
+					</Button>
+					<Button id="followingButton" class="followingButton" onClick="buttonClicked">
+						<Label id="followingCount" class="buttonTopLabel" text="{$.User.following}"/>
+						<Label class="buttonBottomLabel" text="FOLLOWING" />
+					</Button>
+				</View>
+			</View>
+			
+			<View id="profileTableHeader" class="profileTableHeader">
+				<Label id="tableLabel" class="profileTableHeaderLabel" text="MY TIKKS" />
+			</View>
+				
+			<!-- Videos Table part -->
+			<TableView id="profileTable" class="profileTable" 
+					   onDragEnd="galleryDragEnd" onScrollend="tableScrollEnd" onScroll="tableScroll" 
+					   dataTransform="profileNodeTransform" onClick="rowClicked">
+				<HeaderPullView>
+					<Require id="tableHeader" src="partials/tableHeader"/>
+				</HeaderPullView>
+			</TableView>
+		 
+			<!-- Following Table part -->
+			<TableView visible="false" id="followingTable" class="followingTable" 
+				onDragEnd="galleryDragEnd" onScrollend="tableScrollEnd" onScroll="tableScroll" dataTransform="userTransform">
+				<HeaderPullView>
+					<Require id="tableHeader" src="partials/tableHeader"/> 
+				</HeaderPullView>
+			</TableView>
+			
+			<!-- Followers Table part -->
+			<TableView visible="false" id="followersTable" class="followingTable"
+				onDragEnd="galleryDragEnd" onScrollend="tableScrollEnd" onScroll="tableScroll" dataTransform="userTransform" onClick="followersRowClicked">
+				<HeaderPullView>
+					<Require id="tableHeader" src="partials/tableHeader"/> 
+				</HeaderPullView>
+			</TableView>
+			<Button class="seeAllButton" id="seeAll" onClick="seeAllClicked" title="SEE ALL" />
+		</View>		
+	 </View>
+</Alloy>

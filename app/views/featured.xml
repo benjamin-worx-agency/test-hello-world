@@ -1,0 +1,19 @@
+<Alloy>
+	<View id="featuredView" layout="vertical">
+		<View layout="absolute">
+			<View id="tableView">
+				<TableView id="featuredGalleryTable" class="featuredGalleryTable" 
+					onDragEnd="galleryDragEnd" onScrollend="tableScrollEnd" 
+					onScroll="tableScroll" dataTransform="nodeTransform" 
+					onSingletap="rowClicked" onSwipe="showDescription">
+					<HeaderPullView>
+						<Require id="tableHeader" src="partials/tableHeader"></Require> 
+					</HeaderPullView>
+				</TableView>
+			</View>	
+			<View id="noResults" class="noResultsBox" visible="false">
+				<Label class="noResultsLabel" text="NO RESULTS FOUND"/>
+			</View>
+		</View>
+	</View>
+</Alloy>

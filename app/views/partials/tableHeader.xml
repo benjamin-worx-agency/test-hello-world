@@ -1,0 +1,6 @@
+<Alloy>
+	<View height="80" width="320" backgroundColor="black">
+		<View id="imageArrow" left="20" bottom="10" width="23" height="60" backgroundImage="https://github.com/appcelerator/titanium_mobile/raw/master/demos/KitchenSink/Resources/images/whiteArrow.png"/>
+		<Label id="labelStatus" class="refreshLabel" text="Release to refresh"/>
+	</View>
+</Alloy>

@@ -1,0 +1,59 @@
+<Alloy>
+	<Model src="User" instance="true" id="currentNodeUser"/>
+	<Model id="currentNode" src="Node" instance="true"/>
+	
+	<View id="tikDetailsView" class="tikDetailsView">
+		<View class="tikklrHeader">
+			<Button class="backButton" onClick="backClicked"/>
+			<Label class="tikklrHeaderLabel" text="WATCH" />
+		</View>
+		<View class="playerArea" layout="absolute">
+			<View id="image">
+				<Widget id="userThumb" src="com.baboonmedia.remoteimage" class="nodeThumb" image="{$.currentNode.thumb}" >
+				</Widget>
+			</View>
+			<VideoPlayer id="player" class="player" onFullscreen="onPlayerFullscreen"/>
+		</View>
+		<View class="featuredTitleRow">
+			<Label id="featuredTitleLabel" text="{$.currentNode.title}" class="featuerdNodeLabel"/>
+			<Label id="featuredTitleViews" text="{$.currentNode.views}" class="featuerdNodeViews"/>
+			<View class="featuredShare" onClick="shareThisVideo" visible="false"/>
+			<View class="featuredStar" onClick="starThisVideo" visible="false"/>
+			<View class="featuredFlag" id="featuredFlag" onClick="flagThisVideo" visible="true"/>
+		</View>
+		<View id="shareRow" class="shareRow">
+			<View id="closeShare" onClick="closeShareBox" class="closeButton" />
+			<View id="facebook" onClick="shareClicked" class="iconSocial icon-facebook" />
+			<View id="twitter" onClick="shareClicked" class="iconSocial icon-twitter" />
+			<View id="linkedIn" onClick="shareClicked" class="iconSocial icon-linkedIn" />
+			<View id="approveShare" onClick="closeShareBox" class="approveButton" />
+		</View>
+		<View class="featuredTitleRow" layout="vertical">
+			<Label text="Tags:" class="tagsLabel"/>
+			<Label id="tagsText" text="{$.currentNode.tags}" class="nodeTags"/>
+		</View>
+		<View class="featuredTitleRow" >
+			<View class="followingTableInnerBox">
+				<Widget id="pictureUrl" src="com.baboonmedia.remoteimage" class="userThumb" >
+				</Widget>
+				<View class="followingLabelsBox">
+					<Label class="followingNodeLabel" id="userNameLabel"/>
+					<Label class="followingNodeUser" id="userMailLabel"/>
+				</View>
+				<Button id="followButton" class="followButton" onClick="followClicked"/>
+				<Button id="followingUserButton" class="followingUserButton" onClick="followersClicked"/>
+			</View>
+		</View>
+		
+		<View class="tikDetailsTableContainer">
+			<!-- His Videos Table part -->
+			<TableView id="hisVideosTable" class="tikDetailsTable" 
+				onDragEnd="galleryDragEnd" onScrollend="tableScrollEnd" onScroll="tableScroll" 
+				onClick="rowClicked" onSwipe="showDescription" dataTransform="profileNodeTransform">
+				<HeaderPullView>
+					<Require id="tableHeader" src="partials/tableHeader"/>
+				</HeaderPullView>
+			</TableView>
+		</View>
+	</View>
+</Alloy>

@@ -1,0 +1,26 @@
+<Alloy>
+	<View id="briefsView" class="container">
+		<View class="tikklrHeader">
+			<Button class="backButton" id="backButton" onClick="backClicked"/>
+			<Label class="tikklrHeaderLabel" id="headerLabel" text="BRIEFS" />
+		</View>
+		<View class="discoverHeader">
+			<View id="briefBB" class="buttonBar">
+				<Button id="latestBt" class="tikklrDiscoverButton" title="LATEST"/>
+				<Button id="favesBtn" class="tikklrDiscoverButton" title="FAVES"/>
+	            <Button id="endingBtn" class="tikklrDiscoverButton" title="ENDING"/>
+			</View>
+		</View>
+		<ScrollableView id="briefsWindow" class="scrollableItemsList">
+			<View id="latest">
+		    	<Require type="view" src="brief" LoadGallery="true"/>
+			</View>
+			<View id="faves">
+				<Require type="view" src="brief" loadGallery="false"/> 
+			</View>
+			<View id="ending">
+				<Require type="view" src="brief" loadGallery="false" />
+			</View>
+	   </ScrollableView>
+	 </View>
+</Alloy>

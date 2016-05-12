@@ -1,0 +1,14 @@
+<Alloy>
+	<TableViewRow class="profileTableRow" selectionStyle="none" nodeType="video" >
+		<View class="profileNodeRow">
+			<View class="profileNodeThumb">
+				<Widget src="com.baboonmedia.remoteimage" class="videoImage" id="videoImage">
+				</Widget>
+				<View class="profileRowInfoBox">
+					<Label class="profileInfoNodeLabel" id="profileInfoNodeLabel"/>
+					<Label class="infoNodeTags" id="infoNodeTags"/>
+				</View>
+			</View>
+		</View>
+	</TableViewRow>
+</Alloy>

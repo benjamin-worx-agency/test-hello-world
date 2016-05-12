@@ -1,0 +1,11 @@
+<Alloy>
+	<View class="loginView" id="forgotView">
+		<Label id="message" class="label loginLabel" text="Don’t worry,\nwe haven’t forgotten YOU."/>
+		<View class="row" top="10">
+			<TextField class="tikklrSmallTextField" keyboardType="Titanium.UI.KEYBOARD_EMAIL" id="email" hintText="EMAIL"/>
+		</View>
+		<View class="bigRow" layout="vertical">
+			<Button id="resetButton" class="resetPassword btn" title="I GIVE UP!\nRESET MY PASSWORD" onClick="drupalForgot"/>
+		</View>
+	</View>
+</Alloy>

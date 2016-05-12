@@ -1,0 +1,32 @@
+<Alloy>
+	<View id="searchView" class="container">
+		<View class="tikklrHeader">
+			<Button class="backButton" onClick="backClicked"/>
+			<Label class="tikklrHeaderLabel" text="SEARCH" />
+		</View>
+		
+		<View id="bb1" class="searchButtonBar">
+			<Button id="hashBtn" class="tikklrDiscoverButton">
+				<View id="hashBtnIcon" backgroundImage="search-eye-white.png" class="searchIconLarge"/>
+			</Button>
+            <Button id="peopleBtn" class="tikklrDiscoverButton" >
+            	<View id="peopleBtnIcon" backgroundImage="search-profile.png" class="searchIcon"/>
+            </Button>	
+            <Button id="briefBtn" class="tikklrDiscoverButton" >
+            	<View id="briefBtnIcon" backgroundImage="search-brief.png" class="searchIcon"/>
+            </Button>
+		</View>
+		
+		<ScrollableView id="searchWindow" class="searchScrollableItemsList" >
+			<View id="hashSearch">
+		    	<Require type="view" src="search/hash"/>
+			</View>
+			<View id="peopleSearch">
+				<Require type="view" src="search/people" loadGallery="false"/>
+			</View>
+			<View id="briefsSearch">
+				<Require type="view" src="search/brief" loadGallery="false"/>
+			</View>
+	    </ScrollableView>
+ 	</View>
+</Alloy>

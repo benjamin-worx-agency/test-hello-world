@@ -1,0 +1,6 @@
+<Alloy>
+	<Collection id="Categories" src="Node" instance="true" />
+	<View layout="vertical">
+		<Require type="widget" src="tiflexigrid" id="grid"/>
+	</View>
+</Alloy>

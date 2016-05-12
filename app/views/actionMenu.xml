@@ -1,0 +1,24 @@
+<Alloy>	
+	<View id="actionMenuView" class="actionMenuView">
+		
+		<!-- The action Menu -->
+		<View visible="false" id="tikklrActionMenu" class="tikklrActionMenu" onTouchend="onActionMenuTouchEnd" onTouchmove="actionMenuTouchMoved" onTouchstart="actionMenuTouchStart">
+			<View id="iconsContainer" zIndex="2000" opacity="0" width="207" height="207" top="0" left="0">
+				<View id="profileBtn" zIndex="2500" page="profile" class="tikklrWheelImage icon-wheel-profile"/>
+				<View id="createBtn" zIndex="2500" page="create" class="tikklrWheelImage icon-wheel-create"/>
+				<View id="searchBtn" zIndex="2500" page="search" class="tikklrWheelImage icon-wheel-search"/>
+				<!-- <View id="inboxBtn" zIndex="2500" page="inbox" class="tikklrWheelImage icon-wheel-inbox"/> -->
+				<View id="settingsBtn" zIndex="2500" page="settings" class="tikklrWheelImage icon-wheel-settings"/>
+				<View id="rewardsBtn" zIndex="2500" page="rewards" class="tikklrWheelImage icon-wheel-rewards" />
+				<View id="briefBtn" zIndex="2500" page="briefList" class="tikklrWheelImage icon-wheel-brief"/>
+				<View id="playsBtn" zIndex="2500" page="plays" class="tikklrWheelImage icon-wheel-discover"/>
+			</View>
+		</View>
+		
+		<!-- The action menu button  -->
+		<View id="tikklrActionMenuButton" zIndex="2500" class="tikklrActionMenuButton"/>
+		
+		<!-- The action menu blocker  -->
+		<View id="tikklrActionMenuBlocker" zIndex="2500" class="tikklrActionMenuBlocker"/>
+	</View>
+</Alloy>

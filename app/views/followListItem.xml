@@ -1,0 +1,14 @@
+<Alloy>
+	<TableViewRow class="followingTableRow" selectionStyle="none" nodeType="user" >
+		<View class="profileFollowingTableInnerBox">
+			<Widget src="com.baboonmedia.remoteimage" class="profileFollowingNodeThumb" id="followUserImage">
+			</Widget>
+			<View class="profileFollowingLabelsBox">
+				<Label id="followingNodeLabel" class="followingNodeLabel" />
+				<Label id="followingNodeUser" class="followingNodeUser" />
+			</View>
+			<Button id="followButton" class="followButton" onClick="followClicked"/>
+			<Button id="followingUserButton" class="followingUserButton" onClick="followersClicked"/>
+		</View>
+	</TableViewRow>
+</Alloy>

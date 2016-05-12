@@ -1,0 +1,40 @@
+<Alloy>
+	<TableViewRow id="tableViewRow" class="featuredTableRow" nodeType="brief" backgroundImage="finger-background.png">
+		<View class="infoRow">
+			<View class="infoCategoryIcon"/>
+			<Label class="infoTagsLabel" text="Tags:"/>
+			<View class="infoTags">
+				<Label text="Information on the brief" class="infoTag"/>
+			</View>
+			<View class="followingTableRow">
+				<View class="followingTableInnerBox">
+					<Widget id="featuredUserThumb" class="featuredUserThumb" src="com.baboonmedia.remoteimage">
+					</Widget>
+					<View class="followingLabelsBox" >
+						<Label id="followingNodeLabel" class="followingNodeLabel" />
+						<Label id="followingNodeUser" class="followingNodeUser" />
+					</View>
+					<Button id="followButton" class="followButton" onSingletap="disableClick" onClick="followClicked"/>
+					<Button id="followingUserButton" class="followingUserButton" onSingletap="disableClick" onClick="followersClicked"/>
+				</View>
+			</View>
+		</View>
+		<View class="nodeRow">
+	        <Widget src="com.baboonmedia.remoteimage" id="nodeThumb" class="nodeThumb" >
+			</Widget>
+		
+			<View class="featuredTitleRow">
+				<Label id ="featuerdNodeLabel" class="featuerdNodeLabel"/>
+				<View class="featuredShare" onClick="shareVideo" visible="false"/>
+				<View class="featuredStar" onClick="starVideo" visible="false"/>
+			</View>
+			<View class="listShareRow">
+				<View id="closeShare" onClick="handleCloseClicked" class="closeButton" />
+				<View id="facebook" onClick="shareClicked" class="iconSocial icon-facebook" />
+				<View id="twitter" onClick="shareClicked" class="iconSocial icon-twitter" />
+				<View id="linkedIn" onClick="shareClicked" class="iconSocial icon-linkedIn" />
+				<View id="approveShare" onClick="handleCloseClicked" class="approveButton" />
+			</View>
+		</View>
+	</TableViewRow>
+</Alloy>

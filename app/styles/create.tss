@@ -1,0 +1,28 @@
+
+".createBox": {
+	height: "240",
+	width: "100%",
+	backgroundColor: Alloy.Globals.TikklrCreateBlack,
+	opacity: 0.9,
+}
+
+".photoCircle": {
+	width: "140",
+	height: "140",
+	borderRadius: "35",
+	opacity: 1,
+	backgroundColor: Alloy.Globals.TikklrCreateInnerBlack,
+}
+
+".videoCircle": {
+	width: "140",
+	height: "140",
+	borderRadius: "35",
+	opacity: 1,
+	backgroundColor: Alloy.Globals.TikklrCreateInnerBlack,
+}
+
+".createImage": {
+	width: "90",
+	height: "90",
+}

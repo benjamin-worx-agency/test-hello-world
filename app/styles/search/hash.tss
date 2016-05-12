@@ -1,0 +1,123 @@
+".featuredTitleRow": {
+	top: 0,
+	opacity: 0.7,
+	height: Ti.UI.SIZE,
+	width: Ti.UI.FILL,
+	backgroundColor: Alloy.Globals.TikklrWhite,
+}
+
+".featuerdNodeLabel": {
+	color: Alloy.Globals.TikklrGreen,
+	left: "10",
+	top: "0",
+	height: "25",
+	right: "90",
+	font: {
+		fontSize: "15pt",
+		fontFamily: "Substance-ExtraBold",
+	},	
+}
+
+".featuerdNodeViews": {
+	color: Alloy.Globals.TikklrBlack,
+	left: "10",
+	top: "25",
+	right: "90",
+	font: {
+		fontSize: "10pt",
+		fontFamily: "Substance-ExtraBold",
+	},
+}
+
+".featuredShare": {
+	backgroundImage: "molecule.png",
+	width: "40",
+	height: "40",
+	right: "50",
+	defaultImage: "true",
+}
+
+".featuredStar": {
+	backgroundImage: "star.png",
+	width: "40",
+	height: "40",
+	right: "5",
+	defaultImage: "true",
+}
+
+".infoCategoryIcon": {
+	top: "0",
+	left: "0",
+	width: "40",
+	height: "40",
+	defaultImage: "true",
+}
+
+".infoTagsLabel": {
+	font: {
+		fontSize: "12pt",
+		fontFamily: "Substance-Medium"
+	},
+	color: Alloy.Globals.TikklrGreen,
+	top: "0",
+	left: "10",
+	right: "10",
+	height: "20",
+}
+
+".infoTags": {
+	top: "0",
+	left: "10",
+	right: "10",
+	height: "25",
+}
+
+".infoTag": {
+	top: "0",
+	left: "0",
+	color: Alloy.Globals.TikklrGreen,	
+	font: {
+		fontSize: "14pt",
+		fontFamily: "Substance-ExtraBold"
+	},
+}
+
+".followingTableRow": {
+	top: "0",
+	height: Ti.UI.SIZE,
+	layout: "horizontal",
+	backgroundColor: "transparent",
+	width: "100%",
+}
+
+".followingNodeLabel": {
+	left: 5,
+	top: 0,
+	font: {
+		fontSize: "12pt",
+		fontFamily: "Substance-ExtraBold" 
+	},
+	color: Alloy.Globals.TikklrGreen
+}
+
+".followingNodeUser": {
+	left: 5,
+	font: {
+		fontSize: "10pt",
+		fontFamily: "Substance-ExtraBold" 
+	},
+	color: Alloy.Globals.TikklrGreen,	
+}
+
+".hashTextFieldIcon": {
+	left: "5",
+	width: "20",
+}
+
+".searchHeaderTextField": {
+	height: "32",
+	width: "267",
+	backgroundColor: Alloy.Globals.TikklrDarkGreen,
+	color: Alloy.Globals.TikklrGreen,
+	paddingLeft: "22",
+}

@@ -1,0 +1,14 @@
+{
+  "global": {
+    "theme": "tikklr"
+  },
+  "env:development": {},
+  "env:test": {},
+  "env:production": {},
+  "os:ios": {},
+  "os:android": {},
+  "dependencies": {
+    "tiflexigrid": "1.1",
+	"com.baboonmedia.remoteimage":"1.1"
+    }
+}

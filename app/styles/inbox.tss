@@ -1,0 +1,17 @@
+".messageHtml": {
+	color: Alloy.Globals.TikklrGreen,
+	height: "150",
+	width: Ti.UI.FILL,
+	height: "75",
+	scalesPageToFit: false,
+	layout: "absolute",
+}
+
+".inboxTableRow": {
+	layout: "absolute",
+	height: Ti.UI.SIZE,
+}
+
+"#tableView": {
+	top: "40",	
+}
