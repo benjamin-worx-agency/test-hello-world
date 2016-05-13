@@ -9,6 +9,8 @@
 					</View>
 					<View class="row" top="-20">
 						<TextField id="password" class="tikklrSmallTextField" passwordMask="true" hintText="PASSWORD"/>
+					</View>
+					<View class="row" layout="vertical" top="-20">
 						<Button class="forgotPassword label" onClick="forgotPassword" title="forgot?"/>
 					</View>
 					<View class="row" layout="vertical">

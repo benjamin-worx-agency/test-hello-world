@@ -5,7 +5,7 @@
 		fontFamily: 'Substance-ExtraBold',
 	},
 	top: '1',
-	left: '259',
+	right: '25',
 	height: "10"
 }
 
