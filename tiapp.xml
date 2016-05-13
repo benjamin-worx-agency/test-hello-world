@@ -6,7 +6,6 @@
         <module platform="iphone">uk.co.tbp.pushio</module>
         <module platform="iphone">com.appcelerator.urlSession</module>
         <module platform="iphone">com.yydigital.tintswitch</module>
-        <module platform="iphone">com.ghkim.aviary</module>
         <module platform="iphone">ti.touchid</module>
     </modules>
     <id>com.tikklr.tikklrAppStore</id>
