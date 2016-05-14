@@ -9,7 +9,7 @@ var params = {"parameters[type]":"rewards",
 			  "parameters[expiration_date][value][value]":currentFormattedDate, "parameters[expiration_date][value][operator]": ">=", //Start time is less than current time
 			  "sort": "created", "direction":"DESC", "pagesize": 10, "parameters[status]": 1 }; //Sorting and pagination
 
-exports.baseController = "pandaGallery";
+exports.baseController = "tikkGallery";
 
 var args = arguments[0] || null;
 

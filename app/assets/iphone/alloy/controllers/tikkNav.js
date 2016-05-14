@@ -17,7 +17,7 @@ function Controller() {
         "hashBtn" == oldButton.id ? $.hashBtnIcon.backgroundImage = "search-eye.png" : "peopleBtn" == oldButton.id ? $.peopleBtnIcon.backgroundImage = "search-profile.png" : "briefBtn" == oldButton.id && ($.briefBtnIcon.backgroundImage = "search-brief.png");
     }
     require("alloy/controllers/BaseController").apply(this, Array.prototype.slice.call(arguments));
-    this.__controllerPath = "pandaNav";
+    this.__controllerPath = "tikkNav";
     this.args = arguments[0] || {};
     if (arguments[0]) {
         {

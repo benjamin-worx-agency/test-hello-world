@@ -19,7 +19,7 @@ function Controller() {
         $.profileInfoNodeLabel.setText(item.get("titleUpperCase"));
         $.infoNodeTags.setText(item.get("kaltura_tags"));
     }
-    require("alloy/controllers/pandaGallery").apply(this, Array.prototype.slice.call(arguments));
+    require("alloy/controllers/tikkGallery").apply(this, Array.prototype.slice.call(arguments));
     this.__controllerPath = "videosListItem";
     this.args = arguments[0] || {};
     if (arguments[0]) {
@@ -97,7 +97,7 @@ function Controller() {
     $.__views.__alloyId345.add($.__views.infoNodeTags);
     exports.destroy = function() {};
     _.extend($, $.__views);
-    exports.baseController = "pandaGallery";
+    exports.baseController = "tikkGallery";
     setViewData(arguments[0].model);
     exports.clean = function() {
         $.destroy();

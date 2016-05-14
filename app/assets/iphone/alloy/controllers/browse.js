@@ -8,7 +8,7 @@ function __processArg(obj, key) {
 }
 
 function Controller() {
-    require("alloy/controllers/pandaGallery").apply(this, Array.prototype.slice.call(arguments));
+    require("alloy/controllers/tikkGallery").apply(this, Array.prototype.slice.call(arguments));
     this.__controllerPath = "browse";
     this.args = arguments[0] || {};
     if (arguments[0]) {
@@ -37,7 +37,7 @@ function Controller() {
     $.__views.grid.setParent($.__views.browse);
     exports.destroy = function() {};
     _.extend($, $.__views);
-    exports.baseController = "pandaGallery";
+    exports.baseController = "tikkGallery";
     var numberOfItems = 15;
     var categoryUrlParams = {
         "parameters[type]": "category",

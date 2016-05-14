@@ -1,4 +1,4 @@
-exports.baseController = "pandaGallery";
+exports.baseController = "tikkGallery";
 var item = [];
 
 function setViewData(item) {

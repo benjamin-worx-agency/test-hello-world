@@ -1,4 +1,4 @@
-exports.baseController = "pandaNav";
+exports.baseController = "tikkNav";
 var oldButton = $.latestBtn;
 
 $.setNavigationBar($.briefBB, $.briefsWindow);

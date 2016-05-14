@@ -144,7 +144,7 @@ function Controller() {
         dialog.show();
         $.tikDetailsView.add(dialog);
     }
-    require("alloy/controllers/pandaGallery").apply(this, Array.prototype.slice.call(arguments));
+    require("alloy/controllers/tikkGallery").apply(this, Array.prototype.slice.call(arguments));
     this.__controllerPath = "tikDetails";
     this.args = arguments[0] || {};
     if (arguments[0]) {
@@ -520,7 +520,7 @@ function Controller() {
         $.currentNode && $.currentNode.off("fetch change destroy", __alloyId327);
     };
     _.extend($, $.__views);
-    exports.baseController = "pandaGallery";
+    exports.baseController = "tikkGallery";
     require("alloy/animation");
     var entryId = arguments[0];
     $.currentNode = Alloy.Models.currentNode;

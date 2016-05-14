@@ -310,7 +310,7 @@ function Controller() {
             $.loadGallery($.SearchBriefs, params, null, null);
         }
     }
-    require("alloy/controllers/pandaGallery").apply(this, Array.prototype.slice.call(arguments));
+    require("alloy/controllers/tikkGallery").apply(this, Array.prototype.slice.call(arguments));
     this.__controllerPath = "search/brief";
     this.args = arguments[0] || {};
     if (arguments[0]) {
@@ -418,7 +418,7 @@ function Controller() {
         __alloyId412 && __alloyId412.off("fetch destroy change add remove reset", __alloyId413);
     };
     _.extend($, $.__views);
-    exports.baseController = "pandaGallery";
+    exports.baseController = "tikkGallery";
     require("alloy/animation");
     var params = {
         "parameters[type]": "briefs",

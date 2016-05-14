@@ -41,7 +41,7 @@ function Controller() {
             $.loadGallery($.SearchUsers, params, null, null);
         }
     }
-    require("alloy/controllers/pandaGallery").apply(this, Array.prototype.slice.call(arguments));
+    require("alloy/controllers/tikkGallery").apply(this, Array.prototype.slice.call(arguments));
     this.__controllerPath = "search/people";
     this.args = arguments[0] || {};
     if (arguments[0]) {
@@ -143,7 +143,7 @@ function Controller() {
     $.__views.noResults.add($.__views.__alloyId465);
     exports.destroy = function() {};
     _.extend($, $.__views);
-    exports.baseController = "pandaGallery";
+    exports.baseController = "tikkGallery";
     require("alloy/animation");
     var params = {
         keys: "",

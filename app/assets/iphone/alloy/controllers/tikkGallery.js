@@ -172,7 +172,7 @@ function Controller() {
         "facebook-fill.png" == source.backgroundImage ? source.backgroundImage = "facebook.png" : "twitter-fill.png" == source.backgroundImage ? source.backgroundImage = "twitter.png" : "linkedIn-fill.png" == source.backgroundImage && (source.backgroundImage = "linkedIn.png");
     }
     require("alloy/controllers/BaseController").apply(this, Array.prototype.slice.call(arguments));
-    this.__controllerPath = "pandaGallery";
+    this.__controllerPath = "tikkGallery";
     this.args = arguments[0] || {};
     if (arguments[0]) {
         {

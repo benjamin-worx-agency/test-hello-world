@@ -1,4 +1,4 @@
-exports.baseController = "pandaNav";
+exports.baseController = "tikkNav";
 var oldButton = $.hashBtn;
 
 $.setNavigationBar($.bb1, $.searchWindow);

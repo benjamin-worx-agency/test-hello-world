@@ -23,7 +23,7 @@ function Controller() {
         $.followingUserButton.uid = user.get("uid");
         $.followingUserButton.setVisible(user.get("isFollowed"));
     }
-    require("alloy/controllers/pandaGallery").apply(this, Array.prototype.slice.call(arguments));
+    require("alloy/controllers/tikkGallery").apply(this, Array.prototype.slice.call(arguments));
     this.__controllerPath = "followListItem";
     this.args = arguments[0] || {};
     if (arguments[0]) {
@@ -123,7 +123,7 @@ function Controller() {
     followersClicked ? $.addListener($.__views.followingUserButton, "click", followersClicked) : __defers["$.__views.followingUserButton!click!followersClicked"] = true;
     exports.destroy = function() {};
     _.extend($, $.__views);
-    exports.baseController = "pandaGallery";
+    exports.baseController = "tikkGallery";
     setViewData(arguments[0].model);
     exports.clean = function() {
         $.destroy();

@@ -1,4 +1,4 @@
-exports.baseController = "pandaGallery";
+exports.baseController = "tikkGallery";
 
 //Views url is set when loaded
 $.MyVideos = Alloy.createCollection("Node");

@@ -248,7 +248,7 @@ function Controller() {
         }
         $.__views.__alloyId228.setData(rows);
     }
-    require("alloy/controllers/pandaGallery").apply(this, Array.prototype.slice.call(arguments));
+    require("alloy/controllers/tikkGallery").apply(this, Array.prototype.slice.call(arguments));
     this.__controllerPath = "rewards";
     this.args = arguments[0] || {};
     if (arguments[0]) {
@@ -384,7 +384,7 @@ function Controller() {
         pagesize: 10,
         "parameters[status]": 1
     };
-    exports.baseController = "pandaGallery";
+    exports.baseController = "tikkGallery";
     var args = arguments[0] || null;
     var isLoadGallery = "true";
     if (null != args && "undefined" != typeof args) {

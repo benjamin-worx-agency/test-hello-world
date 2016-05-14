@@ -61,7 +61,7 @@ function Controller() {
         $.followingUserButton.setVisible(user.get("isFollowed"));
         $.followingNodeLabel.setText(user.get("realname"));
     }
-    require("alloy/controllers/pandaGallery").apply(this, Array.prototype.slice.call(arguments));
+    require("alloy/controllers/tikkGallery").apply(this, Array.prototype.slice.call(arguments));
     this.__controllerPath = "featuredListItem";
     this.args = arguments[0] || {};
     if (arguments[0]) {
@@ -363,7 +363,7 @@ function Controller() {
     handleCloseClicked ? $.addListener($.__views.approveShare, "click", handleCloseClicked) : __defers["$.__views.approveShare!click!handleCloseClicked"] = true;
     exports.destroy = function() {};
     _.extend($, $.__views);
-    exports.baseController = "pandaGallery";
+    exports.baseController = "tikkGallery";
     var categoriesByIds = {
         128: "category-arts.png",
         130: "category-motors.png",

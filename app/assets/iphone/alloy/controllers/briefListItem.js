@@ -23,7 +23,7 @@ function Controller() {
         $.followingNodeUser.setText(this.item.get("followers"));
         $.featuerdNodeLabel.setText(this.item.get("titleUpperCase"));
     }
-    require("alloy/controllers/pandaGallery").apply(this, Array.prototype.slice.call(arguments));
+    require("alloy/controllers/tikkGallery").apply(this, Array.prototype.slice.call(arguments));
     this.__controllerPath = "briefListItem";
     this.args = arguments[0] || {};
     if (arguments[0]) {
@@ -310,7 +310,7 @@ function Controller() {
     handleCloseClicked ? $.addListener($.__views.approveShare, "click", handleCloseClicked) : __defers["$.__views.approveShare!click!handleCloseClicked"] = true;
     exports.destroy = function() {};
     _.extend($, $.__views);
-    exports.baseController = "pandaGallery";
+    exports.baseController = "tikkGallery";
     setViewData(arguments[0].model);
     __defers["$.__views.followButton!singletap!disableClick"] && $.addListener($.__views.followButton, "singletap", disableClick);
     __defers["$.__views.followButton!click!followClicked"] && $.addListener($.__views.followButton, "click", followClicked);

@@ -8,7 +8,7 @@ function __processArg(obj, key) {
 }
 
 function Controller() {
-    require("alloy/controllers/pandaNav").apply(this, Array.prototype.slice.call(arguments));
+    require("alloy/controllers/tikkNav").apply(this, Array.prototype.slice.call(arguments));
     this.__controllerPath = "plays";
     this.args = arguments[0] || {};
     if (arguments[0]) {
@@ -171,7 +171,7 @@ function Controller() {
     $.__views.playsView.add($.__views.playsWindow);
     exports.destroy = function() {};
     _.extend($, $.__views);
-    exports.baseController = "pandaNav";
+    exports.baseController = "tikkNav";
     $.featuredBtn;
     $.setNavigationBar($.playsBB, $.playsWindow);
     exports.clean = function() {

@@ -27,7 +27,7 @@ function Controller() {
             currentNodes.push($.FeaturedVideos.models[i].id);
         }
     }
-    require("alloy/controllers/pandaGallery").apply(this, Array.prototype.slice.call(arguments));
+    require("alloy/controllers/tikkGallery").apply(this, Array.prototype.slice.call(arguments));
     this.__controllerPath = "featured";
     this.args = arguments[0] || {};
     if (arguments[0]) {
@@ -97,7 +97,7 @@ function Controller() {
     $.__views.noResults.add($.__views.__alloyId89);
     exports.destroy = function() {};
     _.extend($, $.__views);
-    exports.baseController = "pandaGallery";
+    exports.baseController = "tikkGallery";
     require("alloy/animation");
     var params = {
         "parameters[type]": "video",

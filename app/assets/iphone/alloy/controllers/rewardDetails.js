@@ -469,7 +469,7 @@ function Controller() {
             e.source.toggle = false;
         }
     }
-    require("alloy/controllers/pandaGallery").apply(this, Array.prototype.slice.call(arguments));
+    require("alloy/controllers/tikkGallery").apply(this, Array.prototype.slice.call(arguments));
     this.__controllerPath = "rewardDetails";
     this.args = arguments[0] || {};
     if (arguments[0]) {
@@ -539,7 +539,7 @@ function Controller() {
         __alloyId222 && __alloyId222.off("fetch destroy change add remove reset", __alloyId223);
     };
     _.extend($, $.__views);
-    exports.baseController = "pandaGallery";
+    exports.baseController = "tikkGallery";
     require("alloy/animation");
     arguments[0] || null;
     0 == Alloy.Collections.currentNodeList.length && Alloy.Collections.currentNodeList.add(Alloy.Models.currentNode);

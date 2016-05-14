@@ -1,5 +1,5 @@
 
-exports.baseController = "pandaGallery";
+exports.baseController = "tikkGallery";
 
 var numberOfItems = 15;
 var categoryUrlParams = { "parameters[type]":"category", "sort": "title", "direction":"ASC", "pagesize": numberOfItems, "parameters[status]": 1}; //default value for the gallery

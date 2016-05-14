@@ -181,7 +181,7 @@ function Controller() {
     function enableOwnUserFucntionality() {}
     function disableOwnUserFucntionality() {}
     function followersRowClicked() {}
-    require("alloy/controllers/pandaGallery").apply(this, Array.prototype.slice.call(arguments));
+    require("alloy/controllers/tikkGallery").apply(this, Array.prototype.slice.call(arguments));
     this.__controllerPath = "profile";
     this.args = arguments[0] || {};
     if (arguments[0]) {
@@ -539,7 +539,7 @@ function Controller() {
         $.User && $.User.off("fetch change destroy", __alloyId153);
     };
     _.extend($, $.__views);
-    exports.baseController = "pandaGallery";
+    exports.baseController = "tikkGallery";
     $.MyVideos = Alloy.createCollection("Node");
     $.Followers = Alloy.createCollection("DrupalView");
     $.Followers.viewName = "commons_follow_user_followers";

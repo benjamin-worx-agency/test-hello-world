@@ -53,7 +53,7 @@ function Controller() {
         }
         $.__views.__alloyId106.setData(rows);
     }
-    require("alloy/controllers/pandaGallery").apply(this, Array.prototype.slice.call(arguments));
+    require("alloy/controllers/tikkGallery").apply(this, Array.prototype.slice.call(arguments));
     this.__controllerPath = "inbox";
     this.args = arguments[0] || {};
     if (arguments[0]) {
@@ -138,7 +138,7 @@ function Controller() {
         __alloyId115 && __alloyId115.off("fetch destroy change add remove reset", __alloyId116);
     };
     _.extend($, $.__views);
-    exports.baseController = "pandaGallery";
+    exports.baseController = "tikkGallery";
     var params = {
         "parameters[user]": Alloy.Models.User.get("uid"),
         pagesize: 10,
