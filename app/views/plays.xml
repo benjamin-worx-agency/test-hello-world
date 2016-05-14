@@ -13,7 +13,7 @@
 		</View>
 		<ScrollableView id="playsWindow" class="scrollableItemsList" >
 			<View id="featured">
-		    	<Require type="view" src="featured" loadGallery="true" />
+		    	<Require type="view" src="featured" />
 			</View>
 			<View id="popular">
 				<Require type="view" src="featured" loadGallery="false"  />
