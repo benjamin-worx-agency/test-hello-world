@@ -359,6 +359,15 @@
 		fontFamily: 'Substance',
 	},
 	color: Alloy.Globals.TikklrGreen,
+	bottom: '1',
+}
+
+".versionLabel": {
+	font: {
+		fontSize: '9pt',
+		fontFamily: 'Substance',
+	},
+	color: Alloy.Globals.TikklrGreen,
 	bottom: '2',
 }
 

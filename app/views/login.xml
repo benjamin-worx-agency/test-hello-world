@@ -31,6 +31,7 @@
 				</View>
 			</ScrollableView>
 			<Label class="copyrightLabel" text="©Tikklr 2015"/>
+			<Label class="versionLabel" text="Version 1.2.4"/>
 			<View id="registerView">
 				<Require type="view" src="login/register" />
 			</View>
