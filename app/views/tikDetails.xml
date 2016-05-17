@@ -18,8 +18,8 @@
 			<Label id="featuredTitleLabel" text="{$.currentNode.title}" class="featuerdNodeLabel"/>
 			<Label id="featuredTitleViews" text="{$.currentNode.views}" class="featuerdNodeViews"/>
 			<View class="featuredShare" onClick="shareThisVideo" visible="false"/>
-			<View class="featuredStar" onClick="starThisVideo" visible="false"/>
-			<View class="featuredFlag" id="featuredFlag" onClick="flagThisVideo" visible="true"/>
+			<View class="featuredStar" onClick="starThisVideo" visible="true"/>
+			<View class="featuredFlag" id="featuredFlag" onClick="flagThisVideo" visible="false"/>
 		</View>
 		<View id="shareRow" class="shareRow">
 			<View id="closeShare" onClick="closeShareBox" class="closeButton" />
