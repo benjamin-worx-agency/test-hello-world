@@ -15,7 +15,8 @@ var galleryCenter = "400";
 $.currentNodeUser.set('uid', userId);
 
 function setViewData() {
-	$.featuredTitleLabel.setText($.currentNode.get("title_field"));
+	var title = $.currentNode.get("title_field");
+	$.featuredTitleLabel.setText(title.toUpperCase());
 	$.featuredTitleViews.setText($.currentNode.get("views"));
 	$.tagsText.setText($.currentNode.get("kaltura_tags"));
 	
