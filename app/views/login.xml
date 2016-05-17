@@ -30,8 +30,8 @@
 					<Require type="view" src="demo/brandsPay" />
 				</View>
 			</ScrollableView>
-			<Label class="copyrightLabel" text="©Tikklr 2015"/>
-			<Label class="versionLabel" text="Version 1.2.4"/>
+			<Label class="copyrightLabel" text="©Tikklr 2016"/>
+			<Label class="versionLabel" text="Version 1.2.5"/>
 			<View id="registerView">
 				<Require type="view" src="login/register" />
 			</View>
