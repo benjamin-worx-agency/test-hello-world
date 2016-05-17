@@ -46,12 +46,12 @@ function createThumb(image,size) {
 	if (OS_IOS){ 
 	  var imageView = Ti.UI.createImageView({
 	    image: image,
-	    width: Ti.UI.SIZE,
-	    height: Ti.UI.SIZE,
+	    width: size,
+	    height: size,
 	    hires:true
 	  });
 	  if(imageView && imageView.toImage()) {
-	  	return imageView.toImage().imageAsThumbnail(size * 2,0,0);
+	  	return imageView.toImage().imageAsResized(size,size);
 	  } else {
 	  	return imageView;
 	  }
