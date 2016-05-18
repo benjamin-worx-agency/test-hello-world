@@ -8,7 +8,7 @@ $.FeaturedVideos = Alloy.createCollection("Node");
 
 var args = arguments[0] || null;
 
-var isLoadGallery = args.loadGallery || "true";
+var isLoadGallery = args.loadGallery;
 
 if (args != null && typeof args != 'undefined') {
 	if (args.params != null && typeof args.params != 'undefined') {
@@ -50,7 +50,7 @@ Ti.App.addEventListener('noResults', function(e) {
 });
 
 if(params != null) {
-	if (isLoadGallery == "true") {
+	if (isLoadGallery == true) {
 		$.loadGallery($.FeaturedVideos, params, null, null);	
 	}
 } else {
@@ -60,7 +60,7 @@ if(params != null) {
 		$.backButton.hide();
 	}
 	
-	if (isLoadGallery == "true") {
+	if (isLoadGallery == true) {
 		$.loadGallery($.FeaturedVideos, null, null, null);
 	}
 }
