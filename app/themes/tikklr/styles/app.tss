@@ -359,7 +359,7 @@
 		fontFamily: 'Substance',
 	},
 	color: Alloy.Globals.TikklrGreen,
-	bottom: '1',
+	bottom: '0',
 }
 
 ".versionLabel": {
