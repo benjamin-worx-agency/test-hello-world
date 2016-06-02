@@ -47,8 +47,10 @@ function openShareBox() {
 		left: 0
 	});
 	
+	Ti.API.info('---$---');
+	Ti.API.info(JSON.stringify($));
 	$.shareRow.animate(animation);
-	$.shareRow.toggle = true;	
+	$.shareRow.toggle = true;
 };
 
 function closeShareBox() {
@@ -58,7 +60,6 @@ function closeShareBox() {
 	
 	$.shareRow.animate(animation);
 	$.shareRow.toggle = false;
-
 };
 
 function makeShareActive(source) {
@@ -100,7 +101,7 @@ function shareThisVideo(e) {
 }
 
 function starThisVideo(e) {
-	//alert("TODO: video was stared");	
+	//alert("TODO: video was starred");
 }
 
 /**

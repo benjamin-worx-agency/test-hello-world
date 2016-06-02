@@ -7,6 +7,13 @@
 			<Button class="backButton" onClick="backClicked"/>
 			<Label class="tikklrHeaderLabel" text="BRIEF" />
 		</View>
+		<View id="shareRow" class="shareRow">
+			<View id="closeShare" onClick="closeShareBox" class="closeButton" />
+			<View id="facebook" onClick="shareClicked" class="iconSocial icon-facebook" />
+			<View id="twitter" onClick="shareClicked" class="iconSocial icon-twitter" />
+			<View id="linkedIn" onClick="shareClicked" class="iconSocial icon-linkedIn" />
+			<View id="approveShare" onClick="closeShareBox" class="approveButton" />
+		</View>
 		<TableView class="briefDetailsView" id="justForScroll" dataCollection="currentNodeList" dataTransform="briefTransform">
 			<TableViewRow selectionStyle="none" class="briefDetailsView">
 				<!-- Change to scrollable view -->
@@ -16,8 +23,6 @@
 				</View>
 				<View class="briefFeaturedTitleRow">
 					<Label text="{titleUpperCase}" class="featuerdNodeLabel"/>
-					 <!-- <View class="featuredShare" onClick="shareThisVideo"/>
-					<View class="featuredStar" onClick="starThisVideo"/> -->
 					   
 					<View class="featuredShare" onClick="shareThisVideo"/>
 					<View class="featuredStar" onClick="starThisVideo"/>
@@ -27,13 +32,7 @@
 					
 					
 				</View>
-				<View id="shareRow" class="shareRow">
-					<View id="closeShare" onClick="closeShareBox" class="closeButton" />
-					<View id="facebook" onClick="shareClicked" class="iconSocial icon-facebook" />
-					<View id="twitter" onClick="shareClicked" class="iconSocial icon-twitter" />
-					<View id="linkedIn" onClick="shareClicked" class="iconSocial icon-linkedIn" />
-					<View id="approveShare" onClick="closeShareBox" class="approveButton" />
-				</View>
+				
 				<View class="briefBrandRow" >
 					<View class="followingTableInnerBox">
 						<Widget id="image" class="userThumb" src="com.baboonmedia.remoteimage" image="{brandLogoUrl}">

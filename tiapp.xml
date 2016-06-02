@@ -5,7 +5,7 @@
         <module platform="iphone">com.appcelerator.urlSession</module>
         <module platform="iphone">com.yydigital.tintswitch</module>
         <module platform="iphone">ti.touchid</module>
-        <module platform="android">ti.notificare</module>
+        <module platform="android" version="1.7.3">ti.notificare</module>
         <module platform="iphone" version="1.8.0">ti.notificare</module>
     </modules>
     <id>com.tikklr.tikklrApp</id>
