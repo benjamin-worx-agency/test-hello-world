@@ -3,13 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>DEVELOPMENT_APP_KEY</key>
-	<string></string>
+	<string>02fd6d09b70593110d5168fd2f936403abcd161002b3dccc8b15fe34dda53c28</string>
 	<key>DEVELOPMENT_APP_SECRET</key>
-	<string></string>
+	<string>73756b716b27a307bb70b23949239292ab93990ba9cbaca98015b32c32e90afb</string>
 	<key>PRODUCTION_APP_KEY</key>
-	<string></string>
+	<string>02fd6d09b70593110d5168fd2f936403abcd161002b3dccc8b15fe34dda53c28</string>
 	<key>PRODUCTION_APP_SECRET</key>
-	<string></string>
+	<string>73756b716b27a307bb70b23949239292ab93990ba9cbaca98015b32c32e90afb</string>
 	<key>DEVELOPMENT</key>
 	<true/>
 	<key>RESOURCE_BUNDLE</key>

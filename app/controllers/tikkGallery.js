@@ -568,7 +568,15 @@ $.loadGallery = function(collectionToShow, params, center, successCallback) {
 	if (params) {
 		urlParams = params;
 	}
+	
+	Ti.API.info('---Alloy.Globals.Properties.Session---');
+	Ti.API.info(Titanium.App.Properties.getString(Alloy.Globals.Properties.Session));
+	Ti.API.info('---Alloy.Globals.Properties.Token---');
+	Ti.API.info(Titanium.App.Properties.getString(Alloy.Globals.Properties.Token));
+	Ti.API.info('---urlParams---');
+	Ti.API.info(urlParams);
 
+	
 	collection.config.headers['X-CSRF-TOKEN'] = Titanium.App.Properties.getString(Alloy.Globals.Properties.Token);
 	collection.config.headers['Cookie'] = Titanium.App.Properties.getString(Alloy.Globals.Properties.Session);
 	// ,"XDEBUG_SESSION=PHPSTORM"
@@ -815,6 +823,8 @@ rowClicked = function(e) {
 		var args = model.get('uploader');
 
 		Alloy.Models.currentNode = model;
+		Ti.API.info('currentNode----');
+		Ti.API.info(JSON.stringify(model));
 
 		if (nodeType == 'brief') {
 			pageToLoad = 'briefDetails';

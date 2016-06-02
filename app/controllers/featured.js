@@ -1,4 +1,4 @@
-exports.baseController = "tikkGallery"; 
+exports.baseController = "tikkGallery";
 
 var Animation = require('alloy/animation');
 var animationDuration = 300;

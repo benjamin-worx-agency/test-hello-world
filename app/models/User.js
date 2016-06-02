@@ -151,6 +151,11 @@ exports.definition = {
 				var drupalToken = Titanium.App.Properties.getString(Alloy.Globals.Properties.Token);
 				var drupalSession = Titanium.App.Properties.getString(Alloy.Globals.Properties.Session);
 				
+				Ti.API.info('---drupalToken---');
+				Ti.API.info(drupalToken);
+				Ti.API.info('---drupalSession---');
+				Ti.API.info(drupalSession);
+				
 				var url = Alloy.Globals.drupalApiUrl + "system/connect.json";
 				var that = this;
 				var client = Ti.Network.createHTTPClient({
