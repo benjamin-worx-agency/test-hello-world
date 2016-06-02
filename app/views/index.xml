@@ -3,7 +3,7 @@
 		<View id="mainView" backgroundImage="tikklrBackground.jpg" class="container">
 			<Require id="actionMenuRequire" type="view" src="actionMenu"/>
 			<Label class="copyrightLabel" text="©Tikklr 2016"/>
-			<Label class="versionLabel" text="Version 1.2.5"/>
+			<Label class="versionLabel" text="Version 1.2.6"/>
 		</View>
 		<View id="errorMessageHolder" visible="false" class="errorMessageHolder">
 			<ActivityIndicator message="Oops something went wrong..." id="errorLabel" class="errorMessage" />

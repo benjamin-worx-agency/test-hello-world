@@ -8,9 +8,9 @@
         <module platform="android" version="1.7.3">ti.notificare</module>
         <module platform="iphone" version="1.8.0">ti.notificare</module>
     </modules>
-    <id>com.tikklr.tikklrApp</id>
+    <id>com.tikklr.tikklrAppStore</id>
     <name>tikklr</name>
-    <version>1.2.5</version>
+    <version>1.2.6</version>
     <publisher>Tikklr</publisher>
     <url>http://www.tikklr.com</url>
     <description>Tikklr Application</description>
