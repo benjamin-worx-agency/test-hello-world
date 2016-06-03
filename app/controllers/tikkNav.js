@@ -51,6 +51,7 @@ switchViews = function(e) {
 	if(e.source != oldButton) {
 		var pageIndex = childViewsMapping[e.source.id];
 		scrollableViewObj.setCurrentPage(pageIndex);
+		Ti.API.info("------galleryLoaded fired!!----");
 		Ti.App.fireEvent('galleryLoaded', {'id': scrollableViewObj.views[pageIndex].id});
 		selectButton(e.source);
 		oldButton = e.source;

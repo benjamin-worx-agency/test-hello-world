@@ -17,7 +17,9 @@ $.BriefsNodes = Alloy.createCollection("Node");
 
 var args = arguments[0] || null;
 
-var isLoadGallery = args.loadGallery || "true";
+var isLoadGallery = args.loadGallery;
+Ti.API.info('---isLoadGallery---');
+Ti.API.info(isLoadGallery);
 
 var handleGalleryLoadedEvent = function(e) {
     $.tableView.show();
@@ -33,7 +35,14 @@ var handleGalleryLoadedEvent = function(e) {
 				params['sort'] = 'date,1';
 			}
 			
-			if(isLoadGallery) {
+			Ti.API.info('---params after switching---');
+			Ti.API.info(params);
+			Ti.API.info('---isLoadGallery---');
+			Ti.API.info(isLoadGallery);
+			
+			
+			if (!isLoadGallery) {
+				Ti.API.info('---called!!!---');
 				$.loadGallery($.BriefsNodes, params, null);	
 			}
 		}
@@ -47,6 +56,8 @@ function ImageLoaded(widget) {
 var currentNodes = [];
 	
 function handleTableViewItems(e) {
+	
+	Ti.API.info('----refreshed!!----');
 	
 	//Clear table view if we get less items than we had
 	if(typeof $.briefsTableView.data != 'undefined' && 
@@ -91,8 +102,11 @@ Ti.App.addEventListener('noResults', function(e) {
 	handleNoResultsEvent(e);
 });
 
+Ti.API.info("-----params---------");
+Ti.API.info(params);
+
 if(params != null) { //If params != null then we load the gallery
-	if (isLoadGallery == "true") {
+	if (isLoadGallery) {
 		$.loadGallery($.BriefsNodes, params, null);	
 	}
 } else { //If not params were passed
@@ -102,7 +116,7 @@ if(params != null) { //If params != null then we load the gallery
 		$.backButton.hide();
 	}
 	
-	if (isLoadGallery == "true") {
+	if (isLoadGallery) {
 		$.loadGallery($.BriefsNodes, null);
 	}
 }

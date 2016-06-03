@@ -13,7 +13,7 @@
 		</View>
 		<ScrollableView id="briefsWindow" class="scrollableItemsList">
 			<View id="latest">
-		    	<Require type="view" src="brief" LoadGallery="true"/>
+		    	<Require type="view" src="brief" loadGallery="true"/>
 			</View>
 			<View id="faves">
 				<Require type="view" src="brief" loadGallery="false"/> 
