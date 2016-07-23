@@ -18,8 +18,6 @@ $.BriefsNodes = Alloy.createCollection("Node");
 var args = arguments[0] || null;
 
 var isLoadGallery = args.loadGallery;
-Ti.API.info('---isLoadGallery---');
-Ti.API.info(isLoadGallery);
 
 var handleGalleryLoadedEvent = function(e) {
     $.tableView.show();

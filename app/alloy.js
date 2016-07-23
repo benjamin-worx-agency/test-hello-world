@@ -58,6 +58,8 @@ Alloy.Globals.PaddingRight = 25;
 Alloy.Globals.PaddingBottom = 5;
 Alloy.Globals.headerHeight = 40;
 
+Alloy.Globals.videoPlayAreaHeight = parseInt(Ti.Platform.displayCaps.platformHeight) / 2 - 40;
+
 Alloy.Globals.UploadPaddingLeft = 5;
 Alloy.Globals.UploadPaddingTop = 5;
 Alloy.Globals.CheckboxLeft = 200;

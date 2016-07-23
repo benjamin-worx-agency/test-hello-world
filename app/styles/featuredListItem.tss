@@ -77,7 +77,7 @@
 	left: "0",
 	color: Alloy.Globals.TikklrGreen,	
 	font: {
-		fontSize: "14pt",
+		fontSize: "24pt",
 		fontFamily: "Substance-ExtraBold"
 	},
 }

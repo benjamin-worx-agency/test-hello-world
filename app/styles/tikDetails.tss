@@ -113,7 +113,7 @@
 ".player": {
 	top: 0,
 	width: Ti.UI.FILL,
-	height: "180",
+	height: Alloy.Globals.videoPlayAreaHeight,
 	zIndex: 100,
 }
 
@@ -140,6 +140,6 @@
 }
 
 ".playerArea": {
-	height: "180",
+	height: Alloy.Globals.videoPlayAreaHeight,
 }
 
