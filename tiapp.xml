@@ -57,7 +57,6 @@
         <plugin version="1.4">ti.alloy</plugin>
         <plugin version="1.0">ti.notificare</plugin>
     </plugins>
-    <property name="ti.facebook.appid">172196406295610</property>
     <ios>
         <min-ios-ver>5.0</min-ios-ver>
         <plist>
