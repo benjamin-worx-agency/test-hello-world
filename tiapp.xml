@@ -50,7 +50,7 @@
         <target device="mobileweb">false</target>
         <target device="tizen">false</target>
     </deployment-targets>
-    <sdk-version>5.2.2.GA</sdk-version>
+    <sdk-version>5.4.0.GA</sdk-version>
     <plugins>
         <plugin version="1.4">ti.alloy</plugin>
         <plugin version="1.0">ti.notificare</plugin>
