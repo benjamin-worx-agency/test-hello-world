@@ -119,19 +119,19 @@ function shareTwitter() {
       consumerKey : Ti.App.Properties.getString("TWITTER_CONSUMER_KEY")
   });
   // twitter.authorize();
-  twitter.share({
-      message : "Message to Share",
-      success : function() {
-         alert("Tweeted Successfully");
-      },
-      error : function() {
-         alert("Error while tweet");
-      }
-  });
+  // twitter.share({
+      // message : "Message to Share",
+      // success : function() {
+         // alert("Tweeted Successfully");
+      // },
+      // error : function() {
+         // alert("Error while tweet");
+      // }
+  // });
   
   twitter.shareImage({
-      message : messageContent,
-      image : (Ti.Filesystem.getFile(Ti.Filesystem.resourcesDirectory, "KS_nav_ui.png")).read(),
+      message : "Hey, check out the latest brief from " + brandName + ". Title: " + briefTitle + " Summary: " + briefSummary,
+      image : briefImage,
       success : function() {
          alert("Tweeted Successfully");
       },
