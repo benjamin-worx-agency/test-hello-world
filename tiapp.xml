@@ -57,6 +57,12 @@
         <plugin version="1.4">ti.alloy</plugin>
         <plugin version="1.0">ti.notificare</plugin>
     </plugins>
+    
+    <property name="TWITTER_CONSUMER_KEY"></property>
+    <property name="TWITTER_CONSUMER_SECRET"></property>
+    <property name="LINKEDIN_CONSUMER_KEY">788n6u4a6yrci7</property>
+    <property name="LINKEDIN_CONSUMER_SECRET">s3ltwObmkLOm68Zy</property>
+    
     <ios>
         <min-ios-ver>5.0</min-ios-ver>
         <plist>

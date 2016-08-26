@@ -68,8 +68,10 @@ function makeShareActive(source) {
 		shareFacebook();
 	} else if(source.id == 'twitter') {
 		source.backgroundImage = "twitter-fill.png";
+		shareTwitter();
 	} else if(source.id == 'linkedIn') {
 		source.backgroundImage = "linkedIn-fill.png";
+		shareLinkedIn();
 	}
 }
 
@@ -99,6 +101,66 @@ function shareFacebook() {
       title: 'great product',
       description: 'Titanium is a great product',
       picture: 'http://www.appcelerator.com/wp-content/uploads/scale_triangle1.png'
+  });
+}
+
+function shareTwitter() {
+  var social = require('/lib/social');
+  var twitter = social.create({
+      consumerSecret : Ti.App.Properties.getString("TWITTER_CONSUMER_SECRET"),
+      consumerKey : Ti.App.Properties.getString("TWITTER_CONSUMER_KEY")
+  });
+  // twitter.authorize();
+  twitter.share({
+      message : "Message to Share",
+      success : function() {
+         alert("Tweeted Successfully");
+      },
+      error : function() {
+         alert("Error while tweet");
+      }
+  });
+  
+  twitter.shareImage({
+      message : messageContent,
+      image : (Ti.Filesystem.getFile(Ti.Filesystem.resourcesDirectory, "KS_nav_ui.png")).read(),
+      success : function() {
+         alert("Tweeted Successfully");
+      },
+      error : function() {
+         alert("Error while tweet");
+      }
+  });
+}
+
+function shareLinkedIn() {
+  var social = require('/lib/social');
+  var linkedin = social.create({
+      consumerKey : Ti.App.Properties.getString("LINKEDIN_CONSUMER_KEY"),
+      consumerSecret : Ti.App.Properties.getString("LINKEDIN_CONSUMER_SECRET"),
+      site: 'linkedin'
+  });
+  // linkedin.authorize();
+  messageContent = {
+          "comment" : "Testing LinkedIn for AppC",
+          "content" : {
+          "title" : "LinkedIn Appcelerator Module On SocialJS",
+          "submitted_url" : "http://www.appcelerator.com",
+          "submitted_image_url" : "https://static.appcelerator.com/images/header/appc_logo.png",
+          "description" : "My Description text"
+      },
+      "visibility" : {
+          "code" : "anyone"
+      }
+  };
+  linkedin.shareToLinkedin({
+      message : messageContent,
+      success : function() {
+         alert("Linkedin Posted Successfully");
+      },
+      error : function() {
+         alert("Error while posting");
+      }
   });
 }
 
