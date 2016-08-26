@@ -106,7 +106,7 @@ function shareFacebook() {
       link: link,
       title: briefTitle,
       description: briefSummary,
-      // title: "Hey, check out the latest brief from " + brandName,
+      // title: "Hey, check out the latest brief from " + brandName + ".",
       // description: briefTitle + '\r\n' + briefSummary,
       picture: briefImage
   });
@@ -150,7 +150,7 @@ function shareLinkedIn() {
   });
   // linkedin.authorize();
   messageContent = {
-          "comment" : "Hey, check out the latest brief from " + brandName,
+          "comment" : "Hey, check out the latest brief from " + brandName + ".",
           "content" : {
               "title" : briefTitle,
               "submitted_url" : link,
