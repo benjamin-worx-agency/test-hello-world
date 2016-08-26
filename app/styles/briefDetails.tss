@@ -47,7 +47,7 @@
 	backgroundImage: "molecule.png",
 	width: "35",
 	height: "35",
-	right: "50",
+	right: "5",
 }
 
 ".featuredStar": {

@@ -25,7 +25,7 @@
 					<Label text="{titleUpperCase}" class="featuerdNodeLabel"/>
 					   
 					<View class="featuredShare" onClick="shareThisVideo"/>
-					<View class="featuredStar" onClick="starThisVideo"/>
+					<!-- <View class="featuredStar" onClick="starThisVideo"/> -->
 					
 					<!-- These two line above were commeted out as you can see above - By Ben.  This causes an error  -->
 					
