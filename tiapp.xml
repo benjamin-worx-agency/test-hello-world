@@ -9,7 +9,7 @@
         <module platform="iphone" version="1.8.0">ti.notificare</module>
     </modules>
     <id>com.tikklr.tikklrAppStore</id>
-    <name>tikklr</name>
+    <name>Tikklr</name>
     <version>1.2.6</version>
     <publisher>Tikklr</publisher>
     <url>http://www.tikklr.com</url>
