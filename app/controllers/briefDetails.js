@@ -93,14 +93,20 @@ function shareClicked(e) {
 	}
 };
 
+var brandName = Alloy.Models.currentNode.get('brandName');
+var briefTitle = Alloy.Models.currentNode.get('title');
+var briefSummary = Alloy.Models.currentNode.get('briefSummary');
+var briefImage = Alloy.Models.currentNode.get('thumb');
+var link = "http://go.tikklr.com";
+
 function shareFacebook() {
   Ti.API.info('-----facebookshare-----');
   var fb = require('facebook');
   fb.presentShareDialog({
-      link: 'https://appcelerator.com/',
-      title: 'great product',
-      description: 'Titanium is a great product',
-      picture: 'http://www.appcelerator.com/wp-content/uploads/scale_triangle1.png'
+      link: link,
+      title: "Hey, check out the latest brief from " + brandName,
+      description: briefTitle + '\n' + briefSummary,
+      picture: briefImage
   });
 }
 
@@ -142,13 +148,13 @@ function shareLinkedIn() {
   });
   // linkedin.authorize();
   messageContent = {
-          "comment" : "Testing LinkedIn for AppC",
+          "comment" : "Hey, check out the latest brief from " + brandName,
           "content" : {
-          "title" : "LinkedIn Appcelerator Module On SocialJS",
-          "submitted_url" : "http://www.appcelerator.com",
-          "submitted_image_url" : "https://static.appcelerator.com/images/header/appc_logo.png",
-          "description" : "My Description text"
-      },
+              "title" : briefTitle,
+              "submitted_url" : link,
+              "submitted_image_url" : briefImage,
+              "description" : briefSummary
+          },
       "visibility" : {
           "code" : "anyone"
       }
