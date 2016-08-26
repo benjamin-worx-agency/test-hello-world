@@ -118,20 +118,10 @@ function shareTwitter() {
       consumerSecret : Ti.App.Properties.getString("TWITTER_CONSUMER_SECRET"),
       consumerKey : Ti.App.Properties.getString("TWITTER_CONSUMER_KEY")
   });
-  // twitter.authorize();
-  // twitter.share({
-      // message : "Message to Share",
-      // success : function() {
-         // alert("Tweeted Successfully");
-      // },
-      // error : function() {
-         // alert("Error while tweet");
-      // }
-  // });
-  
-  twitter.shareImage({
-      message : "Hey, check out the latest brief from " + brandName + ". Title: " + briefTitle + " Summary: " + briefSummary,
-      image : briefImage,
+  // twitter.deauthorize();
+  twitter.share({
+      // message : "Hey, check out the latest brief from " + brandName + ". Title: " + briefTitle + " Summary: " + briefSummary,
+      message : "Hey, check out the latest brief from " + brandName + ". " + link,
       success : function() {
          alert("Tweeted Successfully");
       },
@@ -139,6 +129,17 @@ function shareTwitter() {
          alert("Error while tweet");
       }
   });
+  
+  // twitter.shareImage({
+      // message : "Hey, check out the latest brief from " + brandName + ". Title: " + briefTitle + " Summary: " + briefSummary,
+      // image : briefImage,
+      // success : function() {
+         // alert("Tweeted Successfully");
+      // },
+      // error : function() {
+         // alert("Error while tweet");
+      // }
+  // });
 }
 
 function shareLinkedIn() {
