@@ -7,11 +7,11 @@
 	<key>DEVELOPMENT_APP_SECRET</key>
 	<string>73756b716b27a307bb70b23949239292ab93990ba9cbaca98015b32c32e90afb</string>
 	<key>PRODUCTION_APP_KEY</key>
-	<string>02fd6d09b70593110d5168fd2f936403abcd161002b3dccc8b15fe34dda53c28</string>
+	<string>dd7048323baf5fbd3b2cfbc3c0dca1dcacb7f67d6edc7c4ac9fa27e66362ac8a</string>
 	<key>PRODUCTION_APP_SECRET</key>
-	<string>73756b716b27a307bb70b23949239292ab93990ba9cbaca98015b32c32e90afb</string>
+	<string>37fa8fe5df10caade4e64eee16972a10854e6f880741ca6814d98668fd3f690a</string>
 	<key>DEVELOPMENT</key>
-	<true/>
+	<false/>
 	<key>RESOURCE_BUNDLE</key>
 	<string>DefaultTheme.bundle</string>
 	<key>OPTIONS</key>
