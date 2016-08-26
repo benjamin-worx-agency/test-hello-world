@@ -193,7 +193,12 @@ exports.definition = {
             var receivePush = function(e) {
               Ti.API.info('---receivePush called!! e:---');
               Ti.API.info(e);
-              Notificare.openNotification(e.data);
+              if (Ti.App.appIsPaused) {
+                Ti.App.pushMessage = e.data;
+              } else {
+                Notificare.openNotification(e.data);
+                Ti.App.pushMessage = '';
+              }
             };
               
             Notificare.addEventListener('ready',function(e){

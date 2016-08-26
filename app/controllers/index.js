@@ -188,6 +188,21 @@ function hideLoading() {
 	$.activityHolder.top = null;
 }
 
+/* Push message handling */
+Ti.App.addEventListener('resume', function() {
+  if (Ti.App.pushMessage && Ti.App.pushMessage != '') {
+    var Notificare = require('ti.notificare');
+    Notificare.openNotification(Ti.App.pushMessage);
+  }
+  Ti.App.appIsPaused = false;
+});
+
+Ti.App.addEventListener('pause', function(){
+  Ti.App.appIsPaused = true;
+});
+
+Ti.UI.iPhone.appBadge = null;
+
 /**
  * Hides the loading indicator
  */
