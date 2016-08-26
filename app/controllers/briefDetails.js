@@ -104,8 +104,10 @@ function shareFacebook() {
   var fb = require('facebook');
   fb.presentShareDialog({
       link: link,
-      title: "Hey, check out the latest brief from " + brandName,
-      description: briefTitle + '\n' + briefSummary,
+      title: briefTitle,
+      description: briefSummary,
+      // title: "Hey, check out the latest brief from " + brandName,
+      // description: briefTitle + '\r\n' + briefSummary,
       picture: briefImage
   });
 }
