@@ -58,10 +58,10 @@
         <plugin version="1.0">ti.notificare</plugin>
     </plugins>
     
-    <property name="TWITTER_CONSUMER_KEY"></property>
-    <property name="TWITTER_CONSUMER_SECRET"></property>
-    <property name="LINKEDIN_CONSUMER_KEY">788n6u4a6yrci7</property>
-    <property name="LINKEDIN_CONSUMER_SECRET">s3ltwObmkLOm68Zy</property>
+    <property name="TWITTER_CONSUMER_KEY">u73I0uHfZkrRuQOplnzXJOpNf</property>
+    <property name="TWITTER_CONSUMER_SECRET">dmVcruelTsI1act0WaqguyeLQtDYwWyTEvFVr5tRXjQtGI85dL</property>
+    <property name="LINKEDIN_CONSUMER_KEY">78ja4cqemptpyw</property>
+    <property name="LINKEDIN_CONSUMER_SECRET">VhDUhHhqHqxa8mm4</property>
     
     <ios>
         <min-ios-ver>5.0</min-ios-ver>
@@ -85,9 +85,9 @@
                 <key>PRODUCTION_APP_SECRET</key>
                 <string>E-NEdvQ8Q9KsZTBX0eIf4Q</string>
                 <key>FacebookAppID</key>
-                <string>1732191890376548</string>
+                <string>832881280144696</string>
                 <key>FacebookDisplayName</key>
-                <string>Tikklr</string>
+                <string>TikklrMob</string>
                 <key>CFBundleURLTypes</key>
                 <array>
                     <dict>
@@ -96,7 +96,7 @@
                         <key>CFBundleURLSchemes</key>
                         <array>
                             <string>Tikklr</string>
-                            <string>fb1732191890376548</string>
+                            <string>fb832881280144696</string>
                         </array>
                     </dict>
                 </array>
