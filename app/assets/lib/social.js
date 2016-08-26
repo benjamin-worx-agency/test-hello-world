@@ -451,7 +451,7 @@ var OAuthAdapter = function(pConsumerSecret, pConsumerKey, pSignatureMethod) {
 	}, window = null, view = null, webView = null, loadingView = null, loadingContainer = null, receivePinCallback = null, accessTokenStore = {};
 
 	this.sendTwitterImage = function(options) {
-		var pUrl = "http://upload.twitter.com/1/statuses/update_with_media.json";
+		var pUrl = "http://api.twitter.com/1.1/statuses/update_with_media.json";
 		var pTitle = options.title;
 		var pSuccessMessage = options.onSuccess, pErrorMessage = options.onError;
 		if (accessToken == null || accessTokenSecret == null) {
@@ -482,9 +482,13 @@ var OAuthAdapter = function(pConsumerSecret, pConsumerKey, pSignatureMethod) {
 				pErrorMessage && pErrorMessage(this.responseText);
 			}
 		});
+		Ti.API.info('---before POST----');
+		Ti.API.info(pUrl);
 		client.open("POST", pUrl);
+		Ti.API.info('---after POST----');
 
 		header = OAuth.getAuthorizationHeader(pUrl, message.parameters);
+		Ti.API.info(header);
 		client.setRequestHeader("Authorization", header);
 		if (!Ti.Android) {
 			client.setRequestHeader("Content-Type", "multipart/form-data");
@@ -798,11 +802,17 @@ var OAuthAdapter = function(pConsumerSecret, pConsumerKey, pSignatureMethod) {
 				client.status == 200 ? pSuccessMessage && pSuccessMessage(this.responseText) : pErrorMessage && pErrorMessage(this.responseText);
 			},
 			onerror : function() {
-				Ti.API.error("Social.js: FAILED to send a request!"), pErrorMessage && pErrorMessage(this.responseText);
+				Ti.API.error("Social.js: FAILED to send a request!");
+				Ti.API.error(this.responseText);
+				pErrorMessage && pErrorMessage(this.responseText);
 			}
 		});
-
-		client.open("POST", pUrl), client.send(parameterMap);
+    
+    Ti.API.info('----before POST----');
+		client.open("POST", pUrl);
+		Ti.API.info('----after POST----');
+		client.send(parameterMap);
+		Ti.API.info('----after send----');
 
 	};
 }, supportedSites = {
