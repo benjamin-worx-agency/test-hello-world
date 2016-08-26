@@ -64,7 +64,8 @@ function closeShareBox() {
 
 function makeShareActive(source) {
 	if(source.id == 'facebook') {
-		source.backgroundImage = "facebook-fill.png";	
+		source.backgroundImage = "facebook-fill.png";
+		shareFacebook();
 	} else if(source.id == 'twitter') {
 		source.backgroundImage = "twitter-fill.png";
 	} else if(source.id == 'linkedIn') {
@@ -74,7 +75,7 @@ function makeShareActive(source) {
 
 function makeShareNonActive(source) {
 	if(source.id == 'facebook') {
-		source.backgroundImage = "facebook.png";	
+		source.backgroundImage = "facebook.png";
 	} else if(source.id == 'twitter') {
 		source.backgroundImage = "twitter.png";
 	} else if(source.id == 'linkedIn') {
@@ -87,14 +88,19 @@ function shareClicked(e) {
 		makeShareActive(e.source);
 			
 		e.source.toggle = true;
-	} else { //We toggle off
-		makeShareNonActive(e.source);
-		
-		e.source.toggle = false;
 	}
-	
-	//alert("TODO: share the video");	
 };
+
+function shareFacebook() {
+  Ti.API.info('-----facebookshare-----');
+  var fb = require('facebook');
+  fb.presentShareDialog({
+      link: 'https://appcelerator.com/',
+      title: 'great product',
+      description: 'Titanium is a great product',
+      picture: 'http://www.appcelerator.com/wp-content/uploads/scale_triangle1.png'
+  });
+}
 
 function shareThisVideo(e) {
 	openShareBox();
