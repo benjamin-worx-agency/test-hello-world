@@ -58,8 +58,8 @@
         <plugin version="1.0">ti.notificare</plugin>
     </plugins>
     
-    <property name="TWITTER_CONSUMER_KEY">u73I0uHfZkrRuQOplnzXJOpNf</property>
-    <property name="TWITTER_CONSUMER_SECRET">dmVcruelTsI1act0WaqguyeLQtDYwWyTEvFVr5tRXjQtGI85dL</property>
+    <property name="TWITTER_CONSUMER_KEY">AvHzp3t3bqiUHcISYKEMfDV7k</property>
+    <property name="TWITTER_CONSUMER_SECRET">RYEexupz6Q0zH8n6KGkABbqg51Psj88oGMfkmE3z0O1jx2EM7u</property>
     <property name="LINKEDIN_CONSUMER_KEY">78ja4cqemptpyw</property>
     <property name="LINKEDIN_CONSUMER_SECRET">VhDUhHhqHqxa8mm4</property>
     
