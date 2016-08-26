@@ -171,6 +171,74 @@ exports.definition = {
 
 						Ti.API.info('Connect success, user is = ' + JSON.stringify(response.user));
 						Ti.App.fireEvent('connectSuccess', {'userId': response.user.uid});
+						
+						
+            /**** NOTIFICARE ****/
+           
+           Ti.API.info('-----notificare-----');
+           
+            var Notificare = require("ti.notificare");
+            
+            var deviceTokenSuccess = function(e) {
+              Ti.API.info('---e.deviceToken---');
+              Ti.API.info(e.deviceToken);
+              Notificare.userID = Alloy.Models.User.get("uid");
+              Notificare.userName = Alloy.Models.User.get("name");
+              Notificare.registerDevice(e.deviceToken);
+            };
+            var deviceTokenError = function(e) {
+              Ti.API.info('---deviceTokenErrorCalled!! e:---');
+              Ti.API.info(e);
+            };
+            var receivePush = function(e) {
+              Ti.API.info('---receivePush called!! e:---');
+              Ti.API.info(e);
+              Notificare.openNotification(e.data);
+            };
+              
+            Notificare.addEventListener('ready',function(e){
+              Ti.API.info('---Notificare ready----');
+              if (Ti.Platform.name == "iPhone OS"){
+                if (parseInt(Ti.Platform.version.split(".")[0]) >= 8) {
+                  // Wait for user settings to be registered before registering for push notifications
+                  Ti.API.info('-----addEventListener usernotificationsettings-----');
+                  Ti.App.iOS.addEventListener('usernotificationsettings', function registerForPush() {
+                      Ti.API.info('---usernotificationsettings called!!!----');
+                    // Remove event listener once registered for push notifications
+                    Ti.API.info('---inside----');
+                    Ti.App.iOS.removeEventListener('usernotificationsettings', registerForPush);
+                    Ti.Network.registerForPushNotifications({
+                      success: deviceTokenSuccess,
+                      error: deviceTokenError,
+                      callback: receivePush
+                    });
+                    Notificare.registerUserNotifications();
+                  });
+                  // Register notification types to use
+                  Ti.App.iOS.registerUserNotificationSettings({
+                    types: [
+                    Ti.App.iOS.USER_NOTIFICATION_TYPE_ALERT,
+                    Ti.App.iOS.USER_NOTIFICATION_TYPE_SOUND,
+                    Ti.App.iOS.USER_NOTIFICATION_TYPE_BADGE
+                    ]
+                  });
+                }
+                // For iOS 7 and earlier
+                else {
+                  Ti.Network.registerForPushNotifications({
+                    // Specifies which notifications to receive
+                    types: [
+                    Ti.Network.NOTIFICATION_TYPE_BADGE,
+                    Ti.Network.NOTIFICATION_TYPE_ALERT,
+                    Ti.Network.NOTIFICATION_TYPE_SOUND
+                    ],
+                    success: deviceTokenSuccess,
+                    error: deviceTokenError,
+                    callback: receivePush
+                  });
+                }
+              }
+            });
 					},
 					onerror: function(e) {
 						Ti.API.info('Connect failed called, this = ' + JSON.stringify(this));
@@ -185,7 +253,7 @@ exports.definition = {
 				client.setRequestHeader("Accept", "application/json");
 				client.setRequestHeader('Content-Type', 'application/json');
 				
-				 if(drupalSession) {
+				if(drupalSession) {
 					client.setRequestHeader("Cookie", drupalSession);
 				}
 
