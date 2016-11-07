@@ -52,17 +52,15 @@
         <target device="mobileweb">false</target>
         <target device="tizen">false</target>
     </deployment-targets>
-    <sdk-version>5.4.0.GA</sdk-version>
+    <sdk-version>5.5.1.GA</sdk-version>
     <plugins>
         <plugin version="1.4">ti.alloy</plugin>
         <plugin version="1.0">ti.notificare</plugin>
     </plugins>
-    
     <property name="TWITTER_CONSUMER_KEY">AvHzp3t3bqiUHcISYKEMfDV7k</property>
     <property name="TWITTER_CONSUMER_SECRET">RYEexupz6Q0zH8n6KGkABbqg51Psj88oGMfkmE3z0O1jx2EM7u</property>
     <property name="LINKEDIN_CONSUMER_KEY">78ja4cqemptpyw</property>
     <property name="LINKEDIN_CONSUMER_SECRET">VhDUhHhqHqxa8mm4</property>
-    
     <ios>
         <min-ios-ver>5.0</min-ios-ver>
         <plist>
