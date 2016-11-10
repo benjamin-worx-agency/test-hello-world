@@ -14,7 +14,7 @@
 			<View id="profileBox" class="profileBox">
 				<Widget src="com.baboonmedia.remoteimage" id="profileImage" class="profileImage" image="{$.User.pictureUrl}">
 				</Widget>
-				<Label> This is version 1.2.4</Label>
+				<!-- <Label> This is version 1.2.4</Label> -->
 				<Label id="profileUserName" text="{$.User.@realname}" class="profileUserName"/>
 				<Label id="profileUserBio" text="{$.User.bio}" class="profileUserBio"/>
 				<View class="profileButtonsBox">
