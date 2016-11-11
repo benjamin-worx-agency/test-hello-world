@@ -70,6 +70,7 @@ function search() {
 		isNewSearch = true;
 		$.enableLoadMore();
 		$.noResults.hide();
+		$.initialText.hide();
 		$.tableView.show();
 
 		params = {"keys": $.search.value, "parameters[status]": 1};
@@ -79,6 +80,7 @@ function search() {
 
 var handleGalleryLoadedEvent = function(e){
 	$.noResults.hide();
+	$.initialText.hide();
 	$.tableView.show();
 	
 	if(typeof $.getView().getParent() != 'undefined') {

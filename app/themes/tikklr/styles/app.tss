@@ -682,6 +682,13 @@
 	
 }
 
+".initialTextWrapper": {
+  width: "90%",
+  height: Ti.UI.SIZE,
+  layout: "vertical",
+  textAlignment: "center"
+}
+
 //Icons styles
 ".icon-wheel-settings":{
 	backgroundImage: "wheelSettings.png"

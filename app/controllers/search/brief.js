@@ -40,6 +40,7 @@ function search() {
 	if($.search.value != '') {
 		$.enableLoadMore();
 		$.noResults.hide();
+		$.initialText.hide();
 		$.tableView.show();
 		//'%' means wildcard search and is added to the search query
 		params = {"parameters[type]":"briefs", "parameters[title]":$.search.value + '%', "sort": "created", "direction":"DESC", "pagesize": 10 };
@@ -49,6 +50,7 @@ function search() {
 
 var handleGalleryLoadedEvent = function(e) {
 	$.noResults.hide();
+	$.initialText.hide();
 	$.tableView.show();
 	
 	if(typeof $.getView().getParent() != 'undefined') {

@@ -56,6 +56,12 @@
 					</TableViewRow>
 				</TableView>
 			</View>
+			<View id="initialText" class="noResultsBox">
+        <View class="initialTextWrapper">
+          <Label class="noResultsLabel" text="SEARCH BRIEFS"/>
+          <Label class="noResultsLabel" text="Type in the brand you want to work with..."/>
+        </View>
+      </View>
 			<View id="noResults" class="noResultsBox" visible="false">
 				<Label class="noResultsLabel" text="NO RESULTS FOUND"/>
 			</View>

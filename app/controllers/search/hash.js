@@ -45,6 +45,7 @@ function search() {
 	if($.search.value != '') {
 		$.enableLoadMore();
 		$.noResults.hide();
+		$.initialText.hide();
 		$.tableView.show();
 
 		params = {
@@ -60,6 +61,7 @@ function search() {
 
 var handleGalleryLoadedEvent = function(e){
 	$.noResults.hide();
+	$.initialText.hide();
 	$.tableView.show();
 	
 	if(typeof $.getView().getParent() != 'undefined') {

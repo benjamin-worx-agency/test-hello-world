@@ -51,6 +51,12 @@
 					</TableViewRow>
 				</TableView>
 			</View>
+			<View id="initialText" class="noResultsBox">
+			  <View class="initialTextWrapper">
+          <Label class="noResultsLabel" text="SEARCH TIKKS"/>
+          <Label class="noResultsLabel" text="Have a look at what people are upto..."/>
+        </View>
+      </View>
 			<View id="noResults" class="noResultsBox" visible="false">
 				<Label class="noResultsLabel" text="NO RESULTS FOUND"/>
 			</View>

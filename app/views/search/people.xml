@@ -15,6 +15,12 @@
 				</HeaderPullView>
 			</TableView>
 			</View>
+			<View id="initialText" class="noResultsBox">
+        <View class="initialTextWrapper">
+          <Label class="noResultsLabel" text="SEARCH PEOPLE"/>
+          <Label class="noResultsLabel" text="See who's onboard..."/>
+        </View>
+      </View>
 			<View id="noResults" class="noResultsBox" visible="false">
 				<Label class="noResultsLabel" text="NO RESULTS FOUND"/>
 			</View>
