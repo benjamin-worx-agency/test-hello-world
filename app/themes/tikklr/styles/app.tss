@@ -626,6 +626,26 @@
 	zIndex: 1000,
 }
 
+".infoMessage": {
+  color: Alloy.Globals.TikklrGreen,
+  font: {
+    fontSize: '14pt',
+    fontFamily: "Substance-ExtraBold",
+  },
+  width: Ti.UI.SIZE,
+  height: "50",
+  zIndex: 1000,
+}
+".infoMessageHolder": {
+  backgroundColor: "black",
+  opacity: 0.9,
+  zIndex: 1000,
+  width: Ti.UI.SIZE,
+  height: "50",
+  borderRadius: "5",
+  borderColor: Alloy.Globals.TikklrGreen,
+}
+
 ".searchIcon": {
 	width: "40",
 	height: "40",

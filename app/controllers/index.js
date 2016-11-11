@@ -169,6 +169,36 @@ function hideSuccess() {
 }
 
 /**
+ * Shows info messages
+ */
+function showInfo() {
+  hideLoading();
+  $.infoMessageHolder.show();
+  $.infoMessageHolder.visible = true;
+  $.infoMessage.show();
+}
+
+/**
+ * Hides the info message
+ */
+function hideInfo() {
+  $.infoMessageHolder.hide();
+  $.infoMessageHolder.visible = false;
+  $.infoMessage.hide();
+}
+
+/**
+ * Add event listener to catch info messages
+ */
+Ti.App.addEventListener('triggerInfo', function(e) {
+  $.infoMessage.text = e.message ? e.message : "hiya!!!";
+  showInfo();
+  setTimeout(function(){
+    hideInfo();
+  }, 1500);
+});
+
+/**
  * Add event listener to catch success messages
  */
 Ti.App.addEventListener('triggerSuccess', function(e) {

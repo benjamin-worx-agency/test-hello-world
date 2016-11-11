@@ -13,5 +13,8 @@
 		<View id="successMessageHolder" visible="false" class="successMessageHolder">
 			<ActivityIndicator message="SUCCESS!!!" id="successMessage" class="successMessage" />
 		</View>
+		<View id="infoMessageHolder" visible="false" class="infoMessageHolder">
+      <Label id="infoMessage" class="infoMessage" text="howdy partner"/>
+    </View>
 	</Window>
 </Alloy>
