@@ -115,6 +115,7 @@
 }
 
 ".searchHeaderTextField": {
+  bottom: "10",
 	height: "32",
 	width: "267",
 	backgroundColor: Alloy.Globals.TikklrDarkGreen,
