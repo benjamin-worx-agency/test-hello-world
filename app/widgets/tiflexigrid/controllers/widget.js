@@ -60,7 +60,8 @@ exports.createGrid = function(args){
 					Ti.API.info("category clicked with ID: " + JSON.stringify(e.source));
 					
 					var args = {
-						params: {"parameters[status]": 1, "parameters[type]": 'video', 'parameters[og_group_ref]': e.source.categoryId, "sort": "created", "direction":"DESC", "pagesize": 10 }
+						params: {"parameters[status]": 1, "parameters[type]": 'video', 'parameters[og_group_ref]': e.source.categoryId, "sort": "created", "direction":"DESC", "pagesize": 10 },
+						loadGallery: true
 					};
 					
 					Ti.App.fireEvent('attachWindow', {'page': 'featured', 'arguments': args, 'headerTitle': e.source.title.toUpperCase()});

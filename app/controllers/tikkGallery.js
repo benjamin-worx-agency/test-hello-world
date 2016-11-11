@@ -106,7 +106,7 @@ nodeTransform = function(model) {
 	var transform = model.toJSON();
 
 	// Example of creating a custom attribute, reference in the view using {custom}
-	transform.isOwner = Alloy.Models.User.get('uid') == transform.author.id ? 1 : 0;
+	transform.isOwner = (transform.author.id && Alloy.Models.User.get('uid') == transform.author.id) ? 1 : 0;
 	transform.titleUpperCase = transform.title.toUpperCase();
 	transform.thumb = 'http://video.tikklr.com/p/' + Alloy.Globals.partnerId + '/thumbnail/entry_id/' + transform.uploader + '/width/' + Ti.Platform.displayCaps.platformWidth * 2 + '/type/1/quality/80';
 
