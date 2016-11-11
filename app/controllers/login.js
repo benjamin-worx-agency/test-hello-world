@@ -84,7 +84,7 @@ var registerFailedEventHandler = function() {
 	showLoginScroll();
 	$.loginScroll.scrollToView(0);
 	$.registerView.hide();
-	alert("Couldn't register new user");
+	Ti.App.fireEvent('triggerSuccess', {message: 'Oh dear'});
 };
 
 Ti.App.addEventListener('registerFailed', registerFailedEventHandler);
