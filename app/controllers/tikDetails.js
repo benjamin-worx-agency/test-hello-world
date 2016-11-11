@@ -219,13 +219,16 @@ function closeShareBox() {
 };
 
 function makeShareActive(source) {
-	if(source.id == 'facebook') {
-		source.backgroundImage = "facebook-fill.png";	
-	} else if(source.id == 'twitter') {
-		source.backgroundImage = "twitter-fill.png";
-	} else if(source.id == 'linkedIn') {
-		source.backgroundImage = "linkedIn-fill.png";
-	}
+  if(source.id == 'facebook') {
+    source.backgroundImage = "facebook-fill.png";
+    shareFacebook();
+  } else if(source.id == 'twitter') {
+    source.backgroundImage = "twitter-fill.png";
+    shareTwitter();
+  } else if(source.id == 'linkedIn') {
+    source.backgroundImage = "linkedIn-fill.png";
+    shareLinkedIn();
+  }
 }
 
 function makeShareNonActive(source) {
@@ -240,17 +243,95 @@ function makeShareNonActive(source) {
 		
 function shareClicked(e) {
 	if(e.source.toggle == false || typeof e.source.toggle == 'undefined') { //Change the icon to be full - toggle on
-		makeShareActive(e.source);
-			
-		e.source.toggle = true;
-	} else { //We toggle off
-		makeShareNonActive(e.source);
-		
-		e.source.toggle = false;
-	}
-	
-	alert("TODO: share the video");	
+    makeShareActive(e.source);
+      
+    e.source.toggle = true;
+  }
 };
+
+
+var tikkTitle = Alloy.Models.currentNode.get('title');
+
+var brandName = Alloy.Models.currentNode.get('brandName');
+var briefTitle = Alloy.Models.currentNode.get('title');
+var briefSummary = Alloy.Models.currentNode.get('briefSummary');
+var briefImage = Alloy.Models.currentNode.get('thumb');
+var link = "http://go.tikklr.com";
+
+function shareFacebook() {
+  Ti.API.info('-----facebookshare-----');
+  var fb = require('facebook');
+  fb.presentShareDialog({
+      link: link,
+      title: briefTitle,
+      description: briefSummary,
+      // title: "Hey, check out the latest brief from " + brandName + ".",
+      // description: briefTitle + '\r\n' + briefSummary,
+      picture: briefImage
+  });
+}
+
+function shareTwitter() {
+  var social = require('/lib/social');
+  var twitter = social.create({
+      consumerSecret : Ti.App.Properties.getString("TWITTER_CONSUMER_SECRET"),
+      consumerKey : Ti.App.Properties.getString("TWITTER_CONSUMER_KEY")
+  });
+  // twitter.deauthorize();
+  twitter.share({
+      // message : "Hey, check out the latest brief from " + brandName + ". Title: " + briefTitle + " Summary: " + briefSummary,
+      message : "Hey, check out the latest brief from " + brandName + ". " + link,
+      success : function() {
+         alert("Tweeted Successfully");
+      },
+      error : function() {
+         alert("Error while tweet");
+      }
+  });
+  
+  // twitter.shareImage({
+      // message : "Hey, check out the latest brief from " + brandName + ". Title: " + briefTitle + " Summary: " + briefSummary,
+      // image : briefImage,
+      // success : function() {
+         // alert("Tweeted Successfully");
+      // },
+      // error : function() {
+         // alert("Error while tweet");
+      // }
+  // });
+}
+
+function shareLinkedIn() {
+  var social = require('/lib/social');
+  var linkedin = social.create({
+      consumerKey : Ti.App.Properties.getString("LINKEDIN_CONSUMER_KEY"),
+      consumerSecret : Ti.App.Properties.getString("LINKEDIN_CONSUMER_SECRET"),
+      site: 'linkedin'
+  });
+  // linkedin.authorize();
+  messageContent = {
+          "comment" : "Hey, check out the latest brief from " + brandName + ".",
+          "content" : {
+              "title" : briefTitle,
+              "submitted_url" : link,
+              "submitted_image_url" : briefImage,
+              "description" : briefSummary
+          },
+      "visibility" : {
+          "code" : "anyone"
+      }
+  };
+  linkedin.shareToLinkedin({
+      message : messageContent,
+      success : function() {
+         alert("Linkedin Posted Successfully");
+      },
+      error : function() {
+         alert("Error while posting");
+      }
+  });
+}
+
 
 function shareThisVideo(e) {
 	openShareBox();

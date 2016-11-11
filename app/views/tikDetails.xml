@@ -7,6 +7,13 @@
 			<Button class="backButton" onClick="backClicked"/>
 			<Label class="tikklrHeaderLabel" text="WATCH" />
 		</View>
+		<View id="shareRow" class="shareRow">
+      <View id="closeShare" onClick="closeShareBox" class="closeButton" />
+      <View id="facebook" onClick="shareClicked" class="iconSocial icon-facebook" />
+      <View id="twitter" onClick="shareClicked" class="iconSocial icon-twitter" />
+      <View id="linkedIn" onClick="shareClicked" class="iconSocial icon-linkedIn" />
+      <View id="approveShare" onClick="closeShareBox" class="approveButton" />
+    </View>
 		<View class="playerArea" layout="absolute">
 			<View id="image">
 				<Widget id="userThumb" src="com.baboonmedia.remoteimage" class="nodeThumb" image="{$.currentNode.thumb}" >
@@ -17,16 +24,9 @@
 		<View class="featuredTitleRow">
 			<Label id="featuredTitleLabel" text="{$.currentNode.title}" class="featuerdNodeLabel"/>
 			<Label id="featuredTitleViews" text="{$.currentNode.views}" class="featuerdNodeViews"/>
-			<View class="featuredShare" onClick="shareThisVideo" visible="false"/>
+			<View class="featuredShare" onClick="shareThisVideo" visible="true"/>
 			<View class="featuredStar" onClick="starThisVideo" visible="false"/>
 			<View class="featuredFlag" id="featuredFlag" onClick="flagThisVideo" visible="true"/>
-		</View>
-		<View id="shareRow" class="shareRow">
-			<View id="closeShare" onClick="closeShareBox" class="closeButton" />
-			<View id="facebook" onClick="shareClicked" class="iconSocial icon-facebook" />
-			<View id="twitter" onClick="shareClicked" class="iconSocial icon-twitter" />
-			<View id="linkedIn" onClick="shareClicked" class="iconSocial icon-linkedIn" />
-			<View id="approveShare" onClick="closeShareBox" class="approveButton" />
 		</View>
 		<View class="featuredTitleRow" layout="vertical">
 			<Label text="Tags:" class="tagsLabel"/>
