@@ -12,6 +12,8 @@
 		<View top="40">
 		<!-- Profile Box -->
 			<View id="profileBox" class="profileBox">
+			  <!-- <Widget src="com.baboonmedia.remoteimage" id="profileImage" class="profileImage" image="http://www.tikklr.com/sites/default/files/pictures/picture-41-1409678457.jpg">
+        </Widget> -->
 				<Widget src="com.baboonmedia.remoteimage" id="profileImage" class="profileImage" image="{$.User.pictureUrl}">
 				</Widget>
 				<!-- <Label> This is version 1.2.4</Label> -->
