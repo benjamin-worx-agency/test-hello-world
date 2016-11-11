@@ -272,6 +272,10 @@ exports.definition = {
 			uploadCompleted : function() {
 				//Create a new reward for the user from the brief.
 				// alert("Your video has been successfully uploaded!");
+				
+				// Upload success
+				Ti.App.fireEvent('triggerSuccess', {message: 'There goes your cherry'});
+				
 				Ti.App.fireEvent('showActionMenu');
 				this.set("uploadInProgress", 0);
 				this.set("uploadNotInProgress", 1);
