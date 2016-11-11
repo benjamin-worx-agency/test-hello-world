@@ -3,7 +3,7 @@
 
 	<View id="hashSearch" class="searchPage">
 		<View class="searchHeader">
-		  <Button class="closeButton" onClick="backClicked"/>
+		  <Button id="closeButton" class="closeButton" onClick="backClicked"/>
 			<TextField id="search" class="searchHeaderTextField" onBlur="search" hintText="SEARCH TIKKS">
 				<View backgroundImage="search-hash.png" class="hashTextFieldIcon"/> 
 			</TextField>

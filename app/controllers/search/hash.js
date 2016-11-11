@@ -15,6 +15,13 @@ var params = {
 
 var isLoadGallery = args.loadGallery || "true";
 
+var isCurrentTikks = args.currentTikks || false;
+if (!isCurrentTikks) {
+  $.closeButton.hide();
+} else {
+  $.addClass($.search, "searchHeaderTextFieldCurrentTikks");
+}
+
 var searchText = '';
 
 //Gets argumets for upload page

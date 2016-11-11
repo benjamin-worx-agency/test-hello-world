@@ -36,7 +36,8 @@ function seeCurrentTiks(e) {
 	args = {
 		search: title,
 		loadGallery: true,
-		searchBy: "kaltura_tags"
+		searchBy: "kaltura_tags",
+		currentTikks: true
 	};
 	
 	Ti.App.fireEvent('attachWindow', {'page': 'search/hash', arguments: args});
