@@ -165,7 +165,11 @@ exports.definition = {
 						var response = JSON.parse(this.responseText); //Parse JSON response to object
 						
 						if(response.user && response.user.uid == 0){ //Anonymous user
-							Ti.App.fireEvent('connectFailed');
+
+						  if (!drupalToken) { // First time user
+						    Ti.App.fireEvent('triggerSuccess', {message: 'howdy partner!!'});
+						  }
+						  Ti.App.fireEvent('connectFailed');
 							return false;
 						}
 
