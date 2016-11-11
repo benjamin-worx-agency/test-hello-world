@@ -74,6 +74,8 @@ var registerSuccessEventHandler = function(email) {
 	$.loginScroll.scrollToView(0);
 	$.registerView.hide();
 	alert("Please check your email for further instructions");
+	
+	Ti.App.fireEvent('triggerSuccess', {message: 'Here we go'});
 };
 
 Ti.App.addEventListener('registerSuccess', registerSuccessEventHandler);
