@@ -61,7 +61,8 @@ exports.createGrid = function(args){
 					
 					var args = {
 						params: {"parameters[status]": 1, "parameters[type]": 'video', 'parameters[og_group_ref]': e.source.categoryId, "sort": "created", "direction":"DESC", "pagesize": 10 },
-						loadGallery: true
+						loadGallery: true,
+						showBackButton: true
 					};
 					
 					Ti.App.fireEvent('attachWindow', {'page': 'featured', 'arguments': args, 'headerTitle': e.source.title.toUpperCase()});

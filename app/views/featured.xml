@@ -1,5 +1,6 @@
 <Alloy>
 	<View id="featuredView" layout="vertical">
+	  <Button id="closeButton" class="closeButton" onClick="backClicked" visible="false"/>
 		<View layout="absolute">
 			<View id="tableView">
 				<TableView id="featuredGalleryTable" class="featuredGalleryTable" 

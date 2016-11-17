@@ -9,6 +9,13 @@ $.FeaturedVideos = Alloy.createCollection("Node");
 var args = arguments[0] || null;
 
 var isLoadGallery = args.loadGallery;
+var showBackButton = args.showBackButton;
+
+if (showBackButton) {
+  $.closeButton.show();
+} else {
+  $.featuredView.remove($.featuredView.children[0]);
+}
 
 if (args != null && typeof args != 'undefined') {
 	if (args.params != null && typeof args.params != 'undefined') {
