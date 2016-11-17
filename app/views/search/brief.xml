@@ -59,7 +59,8 @@
 			<View id="initialText" class="noResultsBox">
         <View class="initialTextWrapper">
           <Label class="noResultsLabel" text="SEARCH BRIEFS"/>
-          <Label class="noResultsLabel" text="Type in the brand you want to work with..."/>
+          <Label class="noResultsLabel" text="Type in the brand you want"/>
+          <Label class="noResultsLabel" text="to work with..."/>
         </View>
       </View>
 			<View id="noResults" class="noResultsBox" visible="false">

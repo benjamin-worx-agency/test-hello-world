@@ -54,7 +54,8 @@
 			<View id="initialText" class="noResultsBox">
 			  <View class="initialTextWrapper">
           <Label class="noResultsLabel" text="SEARCH TIKKS"/>
-          <Label class="noResultsLabel" text="Have a look at what people are upto..."/>
+          <Label class="noResultsLabel" text="Have a look at what people"/>
+          <Label class="noResultsLabel" text="are up to..."/>
         </View>
       </View>
 			<View id="noResults" class="noResultsBox" visible="false">

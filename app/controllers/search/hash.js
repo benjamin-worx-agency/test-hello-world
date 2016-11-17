@@ -61,7 +61,7 @@ function search() {
 
 var handleGalleryLoadedEvent = function(e){
 	$.noResults.hide();
-	$.initialText.hide();
+	// $.initialText.hide();
 	$.tableView.show();
 	
 	if(typeof $.getView().getParent() != 'undefined') {

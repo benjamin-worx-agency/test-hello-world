@@ -703,7 +703,7 @@
 }
 
 ".initialTextWrapper": {
-  width: "90%",
+  width: Ti.UI.FILL,
   height: Ti.UI.SIZE,
   layout: "vertical",
   textAlignment: "center"
