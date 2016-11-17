@@ -212,6 +212,9 @@ briefTransform = function(model) {
 	transform.notIsVideo = transform.video_tikk ? false : true;
 	transform.notIsThumb = transform.tikk_options ? false : true;
 	
+	Ti.API.info('transform.voucher_type -- ');
+	Ti.API.info(transform.voucher_type);
+	
 	if (transform.voucher_type == 'Points') {
 		transform.voucher_image = "pound.png";
 	} else if (transform.voucher_type == 'Ticket') {
@@ -223,6 +226,9 @@ briefTransform = function(model) {
 		transform.voucher_image = "gift.png";
 		transform.voucher_value = "FREE";
 	}
+	
+	Ti.API.info('transform.voucher_image -- ');
+  Ti.API.info(transform.voucher_image);
 
 	return transform;
 };
@@ -789,7 +795,7 @@ function setBriefData() {
 		,
 		'brandLogoUrl' : brandLogoUri//Sets the brandLogoUrl value on the current node
 		,
-		'voucherPercent' : Alloy.Models.currentNode.get('voucher_value')//Sets the voucherPercent value on the current node
+		'voucherPercent' : Alloy.Models.currentNode.get('voucher_value') + '%'//Sets the voucherPercent value on the current node
 		,
 		'brandName' : Alloy.Models.currentNode.get('brand_name')//Sets the brandName value on the current node
 		,
@@ -823,8 +829,6 @@ rowClicked = function(e) {
 		var args = model.get('uploader');
 
 		Alloy.Models.currentNode = model;
-		Ti.API.info('currentNode----');
-		Ti.API.info(JSON.stringify(model));
 
 		if (nodeType == 'brief') {
 			pageToLoad = 'briefDetails';

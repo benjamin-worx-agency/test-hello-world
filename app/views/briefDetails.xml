@@ -51,9 +51,9 @@
 						<View id="selfie" class="iconBriefCamera" backgroundImage="{selfieImage}"/>
 					</View>
 					<View class="cuponRightCell" >
-						<Widget class="iconCupon" src="com.baboonmedia.remoteimage" image="{voucher_image}">
-						</Widget>
-						<!-- <View class="iconCupon"/> -->
+						<!-- <Widget class="iconCupon" src="com.baboonmedia.remoteimage" image="{voucher_image}">
+						</Widget> -->
+						<View class="iconCupon" backgroundImage="{voucher_image}"/>
 						<Label class="cuponValue" text="{voucherPercent}"/>
 					</View>			
 				</View>
